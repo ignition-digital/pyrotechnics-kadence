@@ -50,9 +50,10 @@ module.exports = {
     static: {
       directory: path.resolve(__dirname, "dist"),
     },
-    watchFiles: ["src/**/*.html"],
+    watchFiles: ["src/**/*.html", "src/**/*.js", "src/**/*.css"], // Add more file types if needed
     hot: true,
     port: 8080,
+    open: true, // Opens the browser automatically
   },
   plugins: [
     ...htmlPlugins,
