@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("if (false) {}\r\n\n\n//# sourceURL=webpack://golden-era-world-webpack/./src/index.js?");
+eval("\n\n//# sourceURL=webpack://golden-era-world-webpack/./src/index.js?");
 
 /***/ })
 

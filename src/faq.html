@@ -2,17 +2,12 @@
 <html lang="en-US">
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=yes"
-    />
     <title>FAQ - Golden Era World</title>
     <%= htmlWebpackPlugin.options.templateParameters.commonHead %>
     <link
       rel="stylesheet"
       id="elementor-post-1299-css"
-      href="wp-content/uploads/elementor/css/post-12991a04.css?ver=1725631916"
+      href="<%= roots %>/wp-content/uploads/elementor/css/post-12991a04.css?ver=1725631916"
       type="text/css"
       media="all"
     />
@@ -41,7 +36,7 @@
       }
       .qodef-page-title {
         height: 700px;
-        background-image: url(../wp-content/uploads/2020/05/faq-title-img.jpg);
+        background-image: url(<%= roots %>/wp-content/uploads/2020/05/faq-title-img.jpg);
       }
       .qodef-page-title .qodef-m-title {
         color: #ffffff;
@@ -381,7 +376,7 @@
                       role="search"
                       method="get"
                       class="wp-block-search__button-inside wp-block-search__icon-button qodef-search-form wp-block-search"
-                      action="https://hendon.qodeinteractive.com/"
+                      action="<%= roots %>/"
                     >
                       <label
                         for="qodef-search-form-1"
@@ -452,17 +447,17 @@
                         loading="lazy"
                         width="1000"
                         height="668"
-                        src="../wp-content/uploads/2020/05/sidebar-img.jpg"
+                        src="<%= roots %>/wp-content/uploads/2020/05/sidebar-img.jpg"
                         class="image wp-image-1321 attachment-full size-full"
                         alt="a"
                         style="max-width: 100%; height: auto"
                         title="Banner"
                         decoding="async"
                         srcset="
-                          https://hendon.qodeinteractive.com/wp-content/uploads/2020/05/sidebar-img.jpg         1000w,
-                          https://hendon.qodeinteractive.com/wp-content/uploads/2020/05/sidebar-img-300x200.jpg  300w,
-                          https://hendon.qodeinteractive.com/wp-content/uploads/2020/05/sidebar-img-768x513.jpg  768w,
-                          https://hendon.qodeinteractive.com/wp-content/uploads/2020/05/sidebar-img-600x401.jpg  600w
+                          <%= roots %>/wp-content/uploads/2020/05/sidebar-img.jpg         1000w,
+                          <%= roots %>/wp-content/uploads/2020/05/sidebar-img-300x200.jpg  300w,
+                          <%= roots %>/wp-content/uploads/2020/05/sidebar-img-768x513.jpg  768w,
+                          <%= roots %>/wp-content/uploads/2020/05/sidebar-img-600x401.jpg  600w
                         "
                         sizes="(max-width: 1000px) 100vw, 1000px"
                     /></a>
