@@ -150,9 +150,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuItems = document.querySelectorAll("#primary-menu li");
   menuItems.forEach(function (menuItem) {
     const link = menuItem.querySelector("a");
-    console.log("currentPath", currentPath);
-    console.log("href link", link.getAttribute("href"));
-    if (link && currentPath.includes(link.getAttribute("href"))) {
+    if (
+      link &&
+      (currentPath.includes(link.getAttribute("href")) ||
+        link.getAttribute("href").includes(currentPath))
+    ) {
       menuItem.classList.add("current-menu-item");
     }
   });
