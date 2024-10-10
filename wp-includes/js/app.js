@@ -148,16 +148,16 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const currentPath = window.location.pathname;
   const menuItems = document.querySelectorAll("#primary-menu li");
-  menuItems.forEach(function (menuItem) {
+
+  for (let menuItem of menuItems) {
     const link = menuItem.querySelector("a");
-    console.log("href", link.getAttribute("href"));
     if (
       link &&
       (currentPath.includes(link.getAttribute("href")) ||
         link.getAttribute("href").includes(currentPath))
     ) {
       menuItem.classList.add("current-menu-item");
-      return;
+      break;
     }
-  });
+  }
 });
