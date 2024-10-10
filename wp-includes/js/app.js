@@ -156,6 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         link.getAttribute("href").includes(currentPath))
     ) {
       menuItem.classList.add("current-menu-item");
+      return;
     }
   });
 });
