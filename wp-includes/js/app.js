@@ -150,6 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuItems = document.querySelectorAll("#primary-menu li");
   menuItems.forEach(function (menuItem) {
     const link = menuItem.querySelector("a");
+    console.log("href", link.getAttribute("href"));
     if (
       link &&
       (currentPath.includes(link.getAttribute("href")) ||
