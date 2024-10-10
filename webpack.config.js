@@ -4,25 +4,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 // Define your 'roots' variable
-//const ROOTS_URL = "";
-const ROOTS_URL = "https://ignition-digital.github.io/goldeneraworld";
+const ROOTS_URL = "";
 
+// Define the pages for HtmlWebpackPlugin
 const pages = [
   { name: "index", template: "./src/index.html" },
   { name: "about-us", template: "./src/about-us.html" },
-  { name: "services", template: "./src/services.html" },
-  { name: "get-in-touch", template: "./src/get-in-touch.html" },
   { name: "contact-us", template: "./src/contact-us.html" },
-  { name: "faq", template: "./src/faq.html" },
-  { name: "coming-soon", template: "./src/coming-soon.html" },
-  { name: "404", template: "./src/404.html" },
-  { name: "info-adjacent", template: "./src/info-adjacent.html" },
-  { name: "property-slider", template: "./src/property-slider.html" },
-  { name: "project-complex", template: "./src/project-complex.html" },
-  { name: "apartment-single", template: "./src/apartment-single.html" },
-  { name: "feature-bellow", template: "./src/feature-bellow.html" },
-  { name: "info-bellow", template: "./src/info-bellow.html" },
-  { name: "landing", template: "./src/landing.html" },
+  { name: "product", template: "./src/product.html" },
+  { name: "our-fireworks", template: "./src/our-fireworks.html" },
 ];
 
 const htmlPlugins = pages.map(
@@ -51,9 +41,6 @@ const htmlPlugins = pages.map(
       footer: fs
         .readFileSync("./src/components/footer.html", "utf8")
         .replace(/<%= roots %>/g, ROOTS_URL),
-      bottom: fs
-        .readFileSync("./src/components/bottom-toolbar.html", "utf8")
-        .replace(/<%= roots %>/g, ROOTS_URL),
     })
 );
 
@@ -80,8 +67,8 @@ module.exports = {
       patterns: [
         { from: "wp-includes", to: "wp-includes" },
         { from: "wp-content", to: "wp-content" },
-        { from: "wp-admin", to: "wp-admin" },
-        { from: "wp-json", to: "wp-json" },
+        { from: "i18n", to: "i18n" },
+        { from: "data", to: "data" },
       ],
     }),
   ],
