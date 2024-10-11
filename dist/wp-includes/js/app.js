@@ -142,6 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     languageSelect.value = "en";
     localStorage.setItem("selectedLanguage", "en");
+    window.location.reload();
   }
 });
 
