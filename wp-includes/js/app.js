@@ -131,16 +131,19 @@ document.addEventListener("DOMContentLoaded", function () {
   adjustHrefs();
   document.getElementById("footerYear").textContent = new Date().getFullYear();
   const languageSelect = document.getElementById("desktopLanguageSelect");
+  const languageSelect2 = document.getElementById("mobileLanguageSelect");
   const savedLanguage = localStorage.getItem("selectedLanguage");
 
   if (savedLanguage) {
     if (languageSelect) {
       languageSelect.value = savedLanguage;
+      languageSelect2.value = savedLanguage;
     }
 
     fetchTranslation(savedLanguage);
   } else {
     languageSelect.value = "en";
+    languageSelect2.value = "zh";
     localStorage.setItem("selectedLanguage", "en");
     window.location.reload();
   }
