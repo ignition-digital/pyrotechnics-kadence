@@ -76,9 +76,6 @@ function handleLanguageOnChange(selectId) {
   document.getElementById("mobileLanguageSelect").value = languageSelect.value;
   const currentPath = window.location.pathname;
 
-  console.log("selectId", selectId);
-  console.log("selectedLanguage", selectedLanguage);
-
   if (
     currentPath.includes("product") ||
     currentPath.includes("our-fireworks")
