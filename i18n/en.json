@@ -39,7 +39,13 @@
     "cta": "Get in Touch",
     "all": "All Collection",
     "kid": "Kid Collection",
-    "adult": "Adult Collection"
+    "adult": "Adult Collection",
+    "category_a": "Firecracker Series",
+    "category_b": "Fireworks Series",
+    "category_c": "Throwing Series",
+    "category_d": "Handheld Series",
+    "category_e": "Fountain Series",
+    "category_f": "Flying Series"
   },
   "aboutPage": {
     "banner": "About Us",
