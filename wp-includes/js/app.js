@@ -1,6 +1,23 @@
-function fetchAllProducts() {
-  const inventoryProductsUrl = "data/inventory.json";
-  return fetchProductsFromJsonFile(inventoryProductsUrl);
+async function fetchAllProducts() {
+  const cacheName = "product-cache";
+  const version = 1.0;
+  const inventoryProductsUrl = `data/inventory.json?v=${version}`;
+
+  const cache = await caches.open(cacheName);
+  const cachedResponse = await cache.match(inventoryProductsUrl);
+
+  if (cachedResponse) {
+    return cachedResponse.json();
+  } else {
+    const networkResponse = await fetchProductsFromJsonFile(
+      inventoryProductsUrl
+    );
+    cache.put(
+      inventoryProductsUrl,
+      new Response(JSON.stringify(networkResponse))
+    );
+    return networkResponse;
+  }
 }
 
 function fetchProductsFromJsonFile(jsonFileUrl) {
