@@ -179,6 +179,27 @@
                                 class="elementor-heading-title elementor-size-default"
                                 id="product-title"
                               ></h3>
+                              <span
+                                style="
+                                  font-size: 12px;
+                                  display: inline-flex;
+                                  align-items: center;
+                                "
+                              >
+                                <span
+                                  class="elementor-icon-list-icon"
+                                  style="font-size: 1.2em; margin-right: 4px"
+                                >
+                                  <i
+                                    aria-hidden="true"
+                                    class="icon icon-dropbox-1"
+                                  ></i>
+                                </span>
+                                <span
+                                  class="elementor-icon-list-text"
+                                  id="product-spec"
+                                ></span>
+                              </span>
                             </div>
                           </div>
                           <div
@@ -193,15 +214,19 @@
                                 <br />
 
                                 <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-icon">
-                                    <i
-                                      aria-hidden="true"
-                                      class="icon icon-dropbox-1"
-                                    ></i>
-                                  </span>
+                                  <i> Item Code </i> :
                                   <span
                                     class="elementor-icon-list-text"
-                                    id="product-spec"
+                                    id="product-item-code"
+                                  >
+                                  </span>
+                                </li>
+
+                                <li class="elementor-icon-list-item">
+                                  <i> Category </i> :
+                                  <span
+                                    class="elementor-icon-list-text"
+                                    id="product-group"
                                   >
                                   </span>
                                 </li>
@@ -475,6 +500,8 @@
         const productImage = document.getElementById("product-image");
         const productTitle = document.getElementById("product-title");
         const productSpec = document.getElementById("product-spec");
+        const productCode = document.getElementById("product-item-code");
+        const productGroup = document.getElementById("product-group");
         const defaultImage =
           "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/product-placeholder2.webp";
         const urlParams = new URLSearchParams(window.location.search);
@@ -489,6 +516,11 @@
             : currentProduct.english;
         productImage.src = currentProduct.image_url || defaultImage;
         productSpec.textContent = currentProduct.packaging;
+        productCode.textContent = currentProduct.sku;
+        productGroup.textContent = currentProduct.group
+          .split("-")
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(" ");
       });
     </script>
   </body>

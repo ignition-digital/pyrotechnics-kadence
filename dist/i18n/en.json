@@ -20,7 +20,20 @@
     "kid": "Kid Collection",
     "kid_desc": "This collection is suitable for kid above 6 year old, parent must guard their children to prevent misuse of Sparklers.",
     "adult": "Adult Collection",
-    "adult_desc": "This collection is suitable for above 18 year old and must play with extra caution to avoid unnecessary injury."
+    "adult_desc": "This collection is suitable for above 18 year old and must play with extra caution to avoid unnecessary injury.",
+
+    "category_a": "Firecracker Series",
+    "category_a_desc": "Known for its loud and vibrant bursts, the Firecracker Series offers exciting options for thrill-seekers. Handle with care and follow safety guidelines.",
+    "category_b": "Fireworks Series",
+    "category_b_desc": "A classic choice, the Fireworks Series delivers colorful and awe-inspiring displays in the sky. Perfect for celebratory events.",
+    "category_c": "Throwing Series",
+    "category_c_desc": "These items are designed to be thrown for interactive play. Ensure a safe area is chosen for these items to avoid unintended damage or injury.",
+    "category_d": "Handheld Series",
+    "category_d_desc": "Handheld items offer a more personal experience. They provide a close-up display that must be managed with caution.",
+    "category_e": "Fountain Series",
+    "category_e_desc": "The Fountain Series produces dazzling stationary effects. Ideal for ground-level enjoyment and family-friendly displays.",
+    "category_f": "Flying Series",
+    "category_f_desc": "This series features items that take flight, creating captivating aerial shows. Maintain a clear area for safe launches."
   },
   "footer": {
     "quickLinks": "Quick Links :",

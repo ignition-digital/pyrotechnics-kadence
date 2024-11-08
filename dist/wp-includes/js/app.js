@@ -1,6 +1,6 @@
 async function fetchAllProducts() {
   const cacheName = "product-cache";
-  const version = 1.2;
+  const version = 1.3;
   const inventoryProductsUrl = `data/inventory.json?v=${version}`;
 
   const cache = await caches.open(cacheName);
