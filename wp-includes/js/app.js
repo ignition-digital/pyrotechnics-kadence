@@ -47,7 +47,7 @@ function renderProductList(products) {
   });
 
   // Trigger reflow to ensure styles are applied
-  productContainer.offsetHeight;
+  // productContainer.offsetHeight;
 }
 
 function generateProductHTML(product) {
@@ -59,19 +59,19 @@ function generateProductHTML(product) {
 
   var html = `
     <a href="product.html?id=${product.id}#specs">
-      <div class="pp-grid-item-wrap ${product.group}" data-item-id="${product.sku}">
+      <div class="pp-grid-item-wrap ${product.group}" data-item-id="${product.id}">
         <div class="pp-grid-item pp-image">
-          <div
-            class="pp-image-gallery-thumbnail-wrap pp-ins-filter-hover pp-gallery-tilt"
-          >
+          <div class="pp-image-gallery-thumbnail-wrap pp-ins-filter-hover pp-gallery-tilt">
             <div class="pp-ins-filter-target pp-image-gallery-thumbnail">
-              <img
-                decoding="async"
-                class="pp-gallery-slide-image"
-                src="${imageUrl}"
-                alt=""
-                data-no-lazy="1"
-              />
+<img
+  decoding="async"
+  class="pp-gallery-slide-image"
+  src="${defaultImage}" 
+  srcset="${imageUrl} 1x, ${imageUrl} 2x" 
+  alt=""
+  data-no-lazy="1"
+  loading="lazy"
+  />
             </div>
             <div class="pp-image-overlay pp-media-overlay"></div>
             <div class="pp-gallery-image-content pp-media-content"></div>
@@ -82,7 +82,7 @@ function generateProductHTML(product) {
         </div>
       </div>
     </a>
-    `;
+  `;
 
   return html;
 }
