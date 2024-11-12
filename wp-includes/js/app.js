@@ -6,12 +6,18 @@ async function fetchAllProducts() {
   const cache = await caches.open(cacheName);
   const cachedResponse = await cache.match(inventoryProductsUrl);
 
-  const networkResponse = await fetchProductsFromJsonFile(inventoryProductsUrl);
-  cache.put(
-    inventoryProductsUrl,
-    new Response(JSON.stringify(networkResponse))
-  );
-  return networkResponse;
+  if (cachedResponse) {
+    return cachedResponse.json();
+  } else {
+    const networkResponse = await fetchProductsFromJsonFile(
+      inventoryProductsUrl
+    );
+    cache.put(
+      inventoryProductsUrl,
+      new Response(JSON.stringify(networkResponse))
+    );
+    return networkResponse;
+  }
 }
 
 function fetchProductsFromJsonFile(jsonFileUrl) {
@@ -41,7 +47,7 @@ function renderProductList(products) {
   });
 
   // Trigger reflow to ensure styles are applied
-  productContainer.offsetHeight;
+  // productContainer.offsetHeight;
 }
 
 function generateProductHTML(product) {
