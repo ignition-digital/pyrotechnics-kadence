@@ -61,16 +61,17 @@ function generateProductHTML(product) {
     <a href="product.html?id=${product.id}#specs">
       <div class="pp-grid-item-wrap ${product.group}" data-item-id="${product.id}">
         <div class="pp-grid-item pp-image">
-          <div
-            class="pp-image-gallery-thumbnail-wrap pp-ins-filter-hover pp-gallery-tilt"
-          >
+          <div class="pp-image-gallery-thumbnail-wrap pp-ins-filter-hover pp-gallery-tilt">
             <div class="pp-ins-filter-target pp-image-gallery-thumbnail">
               <img
                 decoding="async"
                 class="pp-gallery-slide-image"
-                src="${imageUrl}"
+                src="${defaultImage}"
+                data-src="${imageUrl}"    
                 alt=""
                 data-no-lazy="1"
+                loading="lazy"          
+                onload="this.src=this.getAttribute('data-src');"
               />
             </div>
             <div class="pp-image-overlay pp-media-overlay"></div>
@@ -82,7 +83,7 @@ function generateProductHTML(product) {
         </div>
       </div>
     </a>
-    `;
+  `;
 
   return html;
 }
