@@ -6,12 +6,18 @@ async function fetchAllProducts() {
   const cache = await caches.open(cacheName);
   const cachedResponse = await cache.match(inventoryProductsUrl);
 
-  const networkResponse = await fetchProductsFromJsonFile(inventoryProductsUrl);
-  cache.put(
-    inventoryProductsUrl,
-    new Response(JSON.stringify(networkResponse))
-  );
-  return networkResponse;
+  if (cachedResponse) {
+    return cachedResponse.json();
+  } else {
+    const networkResponse = await fetchProductsFromJsonFile(
+      inventoryProductsUrl
+    );
+    cache.put(
+      inventoryProductsUrl,
+      new Response(JSON.stringify(networkResponse))
+    );
+    return networkResponse;
+  }
 }
 
 function fetchProductsFromJsonFile(jsonFileUrl) {
@@ -53,7 +59,7 @@ function generateProductHTML(product) {
 
   var html = `
     <a href="product.html?id=${product.id}#specs">
-      <div class="pp-grid-item-wrap ${product.group}" data-item-id="${product.sku}">
+      <div class="pp-grid-item-wrap ${product.group}" data-item-id="${product.id}">
         <div class="pp-grid-item pp-image">
           <div
             class="pp-image-gallery-thumbnail-wrap pp-ins-filter-hover pp-gallery-tilt"
