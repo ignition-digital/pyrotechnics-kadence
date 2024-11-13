@@ -6,18 +6,25 @@ async function fetchAllProducts() {
   const cache = await caches.open(cacheName);
   const cachedResponse = await cache.match(inventoryProductsUrl);
 
-  if (cachedResponse) {
-    return cachedResponse.json();
-  } else {
-    const networkResponse = await fetchProductsFromJsonFile(
-      inventoryProductsUrl
-    );
-    cache.put(
-      inventoryProductsUrl,
-      new Response(JSON.stringify(networkResponse))
-    );
-    return networkResponse;
-  }
+  const networkResponse = await fetchProductsFromJsonFile(inventoryProductsUrl);
+  cache.put(
+    inventoryProductsUrl,
+    new Response(JSON.stringify(networkResponse))
+  );
+  return networkResponse;
+
+  // if (cachedResponse) {
+  //   return cachedResponse.json();
+  // } else {
+  //   const networkResponse = await fetchProductsFromJsonFile(
+  //     inventoryProductsUrl
+  //   );
+  //   cache.put(
+  //     inventoryProductsUrl,
+  //     new Response(JSON.stringify(networkResponse))
+  //   );
+  //   return networkResponse;
+  // }
 }
 
 function fetchProductsFromJsonFile(jsonFileUrl) {
