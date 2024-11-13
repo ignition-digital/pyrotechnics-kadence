@@ -63,15 +63,15 @@ function generateProductHTML(product) {
         <div class="pp-grid-item pp-image">
           <div class="pp-image-gallery-thumbnail-wrap pp-ins-filter-hover pp-gallery-tilt">
             <div class="pp-ins-filter-target pp-image-gallery-thumbnail">
-<img
-  decoding="async"
-  class="pp-gallery-slide-image"
-  src="${defaultImage}" 
-  srcset="${imageUrl} 1x, ${imageUrl} 2x" 
-  alt=""
-  data-no-lazy="1"
-  loading="lazy"
-  />
+              <img
+                decoding="async"
+                class="pp-gallery-slide-image"
+                src="${defaultImage}" 
+                srcset="${imageUrl} 1x, ${imageUrl} 2x" 
+                alt=""
+                data-no-lazy="1"
+                loading="lazy"
+                />
             </div>
             <div class="pp-image-overlay pp-media-overlay"></div>
             <div class="pp-gallery-image-content pp-media-content"></div>
