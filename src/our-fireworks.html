@@ -14,7 +14,6 @@
       href="wp-content/uploads/elementor/css/post-630.css"
       media="all"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
   </head>
 
   <body
@@ -247,25 +246,6 @@
                           <script>
                             fetchAllProducts().then((products) => {
                               renderProductList(products);
-
-                              const grid =
-                                document.querySelector(".pp-image-gallery");
-                              if (grid) {
-                                imagesLoaded(grid, () => {
-                                  // Initialize Isotope after all images are loaded
-                                  const iso = new Isotope(grid, {
-                                    itemSelector: ".pp-grid-item-wrap", // Updated to the correct item selector
-                                    layoutMode: "fitRows",
-                                  });
-
-                                  // Re-layout Isotope when each individual image loads to handle any positioning issues
-                                  imagesLoaded(grid).on("progress", () => {
-                                    iso.layout();
-                                  });
-                                });
-                              } else {
-                                console.error("Grid element not found.");
-                              }
                             });
                           </script>
                         </div>
@@ -285,10 +265,6 @@
           ></section>
         </div>
 
-        <script
-          src="wp-content/plugins/powerpack-elements/assets/lib/isotope/isotope.pkgd.min.js?ver=0.5.3"
-          id="isotope-js"
-        ></script>
         <%= htmlWebpackPlugin.options.footer %>
         <link
           rel="stylesheet"
@@ -297,8 +273,8 @@
           media="all"
         />
         <script
-          src="wp-includes/js/imagesloaded.min.js?ver=5.0.0"
-          id="imagesloaded-js"
+          src="wp-content/plugins/powerpack-elements/assets/lib/isotope/isotope.pkgd.min.js?ver=0.5.3"
+          id="isotope-js"
         ></script>
         <script id="powerpack-frontend-js-extra">
           var ppLogin = {

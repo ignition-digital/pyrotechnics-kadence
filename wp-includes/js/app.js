@@ -6,18 +6,25 @@ async function fetchAllProducts() {
   const cache = await caches.open(cacheName);
   const cachedResponse = await cache.match(inventoryProductsUrl);
 
-  if (cachedResponse) {
-    return cachedResponse.json();
-  } else {
-    const networkResponse = await fetchProductsFromJsonFile(
-      inventoryProductsUrl
-    );
-    cache.put(
-      inventoryProductsUrl,
-      new Response(JSON.stringify(networkResponse))
-    );
-    return networkResponse;
-  }
+  const networkResponse = await fetchProductsFromJsonFile(inventoryProductsUrl);
+  cache.put(
+    inventoryProductsUrl,
+    new Response(JSON.stringify(networkResponse))
+  );
+  return networkResponse;
+
+  // if (cachedResponse) {
+  //   return cachedResponse.json();
+  // } else {
+  //   const networkResponse = await fetchProductsFromJsonFile(
+  //     inventoryProductsUrl
+  //   );
+  //   cache.put(
+  //     inventoryProductsUrl,
+  //     new Response(JSON.stringify(networkResponse))
+  //   );
+  //   return networkResponse;
+  // }
 }
 
 function fetchProductsFromJsonFile(jsonFileUrl) {
@@ -47,7 +54,7 @@ function renderProductList(products) {
   });
 
   // Trigger reflow to ensure styles are applied
-  // productContainer.offsetHeight;
+  productContainer.offsetHeight;
 }
 
 function generateProductHTML(product) {
@@ -63,15 +70,15 @@ function generateProductHTML(product) {
         <div class="pp-grid-item pp-image">
           <div class="pp-image-gallery-thumbnail-wrap pp-ins-filter-hover pp-gallery-tilt">
             <div class="pp-ins-filter-target pp-image-gallery-thumbnail">
-<img
-  decoding="async"
-  class="pp-gallery-slide-image"
-  src="${defaultImage}" 
-  srcset="${imageUrl} 1x, ${imageUrl} 2x" 
-  alt=""
-  data-no-lazy="1"
-  loading="lazy"
-  />
+              <img
+                decoding="async"
+                class="pp-gallery-slide-image"
+                src="${defaultImage}" 
+                srcset="${imageUrl} 1x, ${imageUrl} 2x" 
+                alt=""
+                data-no-lazy="1"
+                loading="lazy"
+                />
             </div>
             <div class="pp-image-overlay pp-media-overlay"></div>
             <div class="pp-gallery-image-content pp-media-content"></div>
