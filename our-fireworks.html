@@ -1978,4 +1978,27 @@
                 };
               }
             }
-          })();</script></div></div></body></html>
+          })();</script><script>const productContainer = document.getElementById(
+            "pp-image-gallery-38bff30"
+          );
+
+          const filterIds = [
+            "firecracker-series",
+            "fireworks-series",
+            "throwing-series",
+            "handheld-series",
+            "fountain-series",
+            "flying-series",
+          ];
+
+          filterIds.forEach((filterId) => {
+            const filterElement = document.getElementById(filterId);
+            if (filterElement) {
+              filterElement.addEventListener("click", () => {
+                productContainer.offsetHeight;
+                console.log(
+                  `${filterId} clicked, product container height recalculated.`
+                );
+              });
+            }
+          });</script></div></div></body></html>
