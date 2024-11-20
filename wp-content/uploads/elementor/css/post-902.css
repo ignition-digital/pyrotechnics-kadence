@@ -42,7 +42,7 @@
 }
 .elementor-902 .elementor-element.elementor-element-022bca0 {
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  margin-top: 25px;
+  margin-top: 5px;
   margin-bottom: 0px;
   padding: 0px 0px 0px 0px;
 }
@@ -113,7 +113,7 @@
   .elementskit-section-title-wraper
   .elementskit-section-title {
   color: #132a8f;
-  margin: 0px 0px 38px 0px;
+  margin: 0px 0px 5px 0px;
   font-family: "Montserrat", Sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -133,18 +133,18 @@
   > span {
   color: #000000;
 }
-.elementor-902
+/* .elementor-902
   .elementor-element.elementor-element-901c49d
   .elementor-icon-list-items:not(.elementor-inline-items)
   .elementor-icon-list-item:not(:last-child) {
   padding-bottom: calc(10px / 2);
-}
-.elementor-902
+} */
+/* .elementor-902
   .elementor-element.elementor-element-901c49d
   .elementor-icon-list-items:not(.elementor-inline-items)
   .elementor-icon-list-item:not(:first-child) {
   margin-top: calc(10px / 2);
-}
+} */
 .elementor-902
   .elementor-element.elementor-element-901c49d
   .elementor-icon-list-items.elementor-inline-items
@@ -204,7 +204,7 @@ body:not(.rtl)
 .elementor-902
   .elementor-element.elementor-element-901c49d
   .elementor-icon-list-text {
-  color: #000000;
+  color: white;
   transition: color 0.3s;
 }
 .elementor-902
@@ -231,7 +231,7 @@ body:not(.rtl)
   .elementskit-section-title-wraper
   .elementskit-section-title {
   color: #132a8f;
-  margin: 0px 0px 38px 0px;
+  margin: 0px 0px 5px 0px;
   font-family: "Montserrat", Sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -251,12 +251,12 @@ body:not(.rtl)
   > span {
   color: #000000;
 }
-.elementor-902
+/* .elementor-902
   .elementor-element.elementor-element-d1c1e60
   .elementor-icon-list-items:not(.elementor-inline-items)
   .elementor-icon-list-item:not(:last-child) {
   padding-bottom: calc(14px / 2);
-}
+} */
 .elementor-902
   .elementor-element.elementor-element-d1c1e60
   .elementor-icon-list-items:not(.elementor-inline-items)
@@ -294,7 +294,7 @@ body:not(.rtl)
   .elementor-element.elementor-element-d1c1e60
   .elementor-icon-list-icon
   i {
-  color: #000000;
+  color: white;
   transition: color 0.3s;
 }
 .elementor-902
@@ -329,7 +329,7 @@ body:not(.rtl)
 .elementor-902
   .elementor-element.elementor-element-d1c1e60
   .elementor-icon-list-text {
-  color: #000000;
+  color: white;
   transition: color 0.3s;
 }
 .elementor-902
