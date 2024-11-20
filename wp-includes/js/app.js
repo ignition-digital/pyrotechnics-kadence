@@ -156,7 +156,7 @@ function adjustHrefs() {
 
 document.addEventListener("DOMContentLoaded", function () {
   adjustHrefs();
-  document.getElementById("footerYear").textContent = new Date().getFullYear();
+  // document.getElementById("footerYear").textContent = new Date().getFullYear();
   const languageSelect = document.getElementById("desktopLanguageSelect");
   const languageSelect2 = document.getElementById("mobileLanguageSelect");
   const savedLanguage = localStorage.getItem("selectedLanguage");
