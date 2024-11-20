@@ -1,12 +1,12 @@
 {
   "navbar": {
-    "homepage": "主页",
-    "ourFireworks": "我们的烟花",
+    "homepage": "首页",
+    "ourFireworks": "产品分类",
     "aboutUS": "关于我们",
     "contactUS": "联系我们"
   },
   "hero": {
-    "title": "马来西亚授权烟花经销商",
+    "title": "马来西亚值得信赖的合法烟花爆竹进口商",
     "cta": "探索更多"
   },
   "testimonial": {
@@ -37,10 +37,10 @@
   "footer": {
     "quickLinks": "快速链接 :",
     "contactInfo": "联系我们 :",
-    "homepage": "主页",
-    "ourFireworks": "正宗烟花",
+    "homepage": "首页",
+    "ourFireworks": "产品分类",
     "aboutUS": "关于我们",
-    "contactUS": "保持联系",
+    "contactUS": "联系我们",
     "location": "服务地点：马来西亚",
     "phone": "电话: +(60)16 681 7996",
     "desc": "Pyrotechnics (M) Sdn Bhd 是马来西亚合法且获得许可的消费烟花经销商。"
@@ -79,7 +79,7 @@
     "ourContact": "我们的联系方式",
     "contact1": "电话：+(60)16 681 7996（Vincent 先生）",
     "contact2": "电话：+(60)12 434 3248（Soon 先生）",
-    "email": "电子邮箱: pyrotechnics.info@gmail.com",
+    "email": "电子邮箱: sales-admin@pyrotechnicsfireworks.com",
     "address1a": "地址(总部):",
     "address1b": "PT 11395, Jalan BBN 6/2B, Desa Cempaka, Putra Nilai, 71800 Negeri Sembilan",
     "address2a": "地址(砂拉越):",
