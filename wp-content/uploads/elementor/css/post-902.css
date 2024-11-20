@@ -356,7 +356,7 @@ body:not(.rtl)
 .elementor-902
   .elementor-element.elementor-element-1782427
   > .elementor-element-populated {
-  margin: 20px 0px 0px 35px;
+  margin: 0px 0px 0px 35px;
   --e-column-margin-right: 0px;
   --e-column-margin-left: 35px;
 }
