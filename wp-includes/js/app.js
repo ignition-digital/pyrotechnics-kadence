@@ -54,7 +54,7 @@ function renderProductList(products) {
   });
 
   // Trigger reflow to ensure styles are applied
-  productContainer.offsetHeight;
+  // productContainer.offsetHeight;
 }
 
 function generateProductHTML(product) {
