@@ -52,9 +52,6 @@ function renderProductList(products) {
     var productHTML = generateProductHTML(product);
     productContainer.innerHTML += productHTML;
   });
-
-  // Trigger reflow to ensure styles are applied
-  // productContainer.offsetHeight;
 }
 
 function generateProductHTML(product) {
