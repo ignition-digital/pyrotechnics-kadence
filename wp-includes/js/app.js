@@ -45,13 +45,16 @@ function fetchProductsFromJsonFile(jsonFileUrl) {
   });
 }
 
-function renderProductList(products) {
-  const productContainer = document.getElementById("pp-image-gallery-38bff30");
-  productContainer.innerHTML = "";
-  products.forEach(function (product) {
-    var productHTML = generateProductHTML(product);
-    productContainer.innerHTML += productHTML;
-  });
+function renderProductList(products, containerId) {
+  const productContainer = document.getElementById(containerId);
+  if (productContainer) {
+    productContainer.innerHTML = "";
+    products.forEach(function (product) {
+      var productHTML = generateProductHTML(product);
+      productContainer.innerHTML += productHTML;
+    });
+    productContainer.offsetHeight;
+  }
 }
 
 function generateProductHTML(product) {
