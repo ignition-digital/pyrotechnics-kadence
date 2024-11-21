@@ -2073,6 +2073,14 @@
         productVideo.style.display = "none";
       }
 
+      if (currentProduct.image_urls.length === 1) {
+        productImagesContainer.style.justifyContent = "center";
+      } else if (currentProduct.image_urls.length === 2) {
+        productImagesContainer.style.justifyContent = "space-around";
+      } else {
+        productImagesContainer.style.justifyContent = "space-between";
+      }
+
       currentProduct.image_urls.forEach((imageUrl, index) => {
         const productItem = document.createElement("div");
         productItem.classList.add("product-item");
