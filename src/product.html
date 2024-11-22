@@ -14,14 +14,24 @@
       href="wp-content/uploads/elementor/css/post-1186.css"
       media="all"
     />
+    <script src="data\inventory.js"></script>
+    <style>
+      .product-images img {
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      .product-images img:hover {
+        border-color: #007bff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    </style>
   </head>
   <body
     class="page-template page-template-elementor_header_footer page page-id-1186 wp-custom-logo wp-embed-responsive footer-on-bottom hide-focus-outline link-style-standard content-title-style-hide content-width-fullwidth content-style-unboxed content-vertical-padding-hide transparent-header mobile-transparent-header kadence-elementor-colors elementor-default elementor-template-full-width elementor-kit-18 elementor-page elementor-page-1186"
   >
     <div id="wrapper" class="site wp-site-blocks">
-      <a class="skip-link screen-reader-text scroll-ignore" href="#main"
-        >Skip to content</a
-      >
       <%= htmlWebpackPlugin.options.navbar %>
       <div id="inner-wrap" class="wrap hfeed kt-clear">
         <div
@@ -139,22 +149,95 @@
                             data-widget_type="image.default"
                           >
                             <div class="elementor-widget-container">
-                              <a
-                                href="https://wa.me/60166817996?text=Message%20from%20www.pyrotechnicsfireworks.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                              <div
+                                style="
+                                  position: relative;
+                                  width: 100%;
+                                  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                                "
                               >
-                                <img
-                                  id="product-image"
-                                  decoding="async"
-                                  width="358"
-                                  height="422"
+                                <iframe
+                                  id="product-video"
                                   src=""
-                                  class="attachment-large size-large wp-image-162"
-                                  alt="Pyrotechnics"
-                                  sizes="(max-width: 358px) 100vw, 358px"
+                                  frameborder="0"
+                                  allow="autoplay; encrypted-media"
+                                  allowfullscreen
+                                  title="Pyrotechnics Video"
+                                  style="
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;
+                                  "
+                                ></iframe>
+                                <img
+                                  id="placeholder-image"
+                                  src="https://public-110924.s3.ap-southeast-1.amazonaws.com/images/video-coming-soon.png"
+                                  style="
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    display: block;
+                                  "
                                 />
-                              </a>
+                              </div>
+
+                              <div
+                                class="product-images"
+                                id="product-images-container"
+                                style="
+                                  display: flex;
+                                  justify-content: space-between;
+                                  gap: 10px;
+                                  margin-top: 15px;
+                                "
+                              ></div>
+
+                              <!-- Modal for Enlarge Image -->
+                              <div
+                                id="myModal"
+                                style="
+                                  display: none;
+                                  position: fixed;
+                                  z-index: 999;
+                                  left: 0;
+                                  top: 0;
+                                  width: 100%;
+                                  height: 100%;
+                                  background-color: rgba(0, 0, 0, 0.8);
+                                "
+                              >
+                                <span
+                                  onclick="closeModal()"
+                                  style="
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 20px;
+                                    font-size: 30px;
+                                    color: #fff;
+                                    cursor: pointer;
+                                  "
+                                  >&times;</span
+                                >
+                                <img
+                                  id="modal-img"
+                                  src=""
+                                  alt="Enlarged Image"
+                                  style="
+                                    max-width: 90%;
+                                    max-height: 80%;
+                                    margin: auto;
+                                    display: block;
+                                    opacity: 0;
+                                    transition: opacity 0.5s ease-in-out;
+                                  "
+                                />
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -179,27 +262,6 @@
                                 class="elementor-heading-title elementor-size-default"
                                 id="product-title"
                               ></h3>
-                              <span
-                                style="
-                                  font-size: 12px;
-                                  display: inline-flex;
-                                  align-items: center;
-                                "
-                              >
-                                <span
-                                  class="elementor-icon-list-icon"
-                                  style="font-size: 1.2em; margin-right: 4px"
-                                >
-                                  <i
-                                    aria-hidden="true"
-                                    class="icon icon-dropbox-1"
-                                  ></i>
-                                </span>
-                                <span
-                                  class="elementor-icon-list-text"
-                                  id="product-spec"
-                                ></span>
-                              </span>
                             </div>
                           </div>
                           <div
@@ -227,6 +289,15 @@
                                   <span
                                     class="elementor-icon-list-text"
                                     id="product-group"
+                                  >
+                                  </span>
+                                </li>
+
+                                <li class="elementor-icon-list-item">
+                                  <i id="packaging"> </i> :
+                                  <span
+                                    class="elementor-icon-list-text"
+                                    id="product-spec"
                                   >
                                   </span>
                                 </li>
@@ -499,6 +570,7 @@
       const labels = {
         itemCode: { en: "Item Code", zh: "项目代码" },
         category: { en: "Category", zh: "类别" },
+        packaging: { en: "Packaging", zh: "包装" },
       };
       const groupMappings = {
         "firecracker-series": {
@@ -512,40 +584,102 @@
         "flying-series": { en: "Flying Series", zh: "飞天系列" },
       };
 
-      fetchAllProducts().then((products) => {
-        const productImage = document.getElementById("product-image");
-        const productTitle = document.getElementById("product-title");
-        const productSpec = document.getElementById("product-spec");
-        const productCode = document.getElementById("product-item-code");
-        const productGroup = document.getElementById("product-group");
-        const defaultImage =
-          "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/product-placeholder2.webp";
-        const urlParams = new URLSearchParams(window.location.search);
-        const currentProduct = products.find(
-          (product) => product.id === urlParams.get("id")
-        );
+      const productImagesContainer = document.getElementById(
+        "product-images-container"
+      );
+      const productTitle = document.getElementById("product-title");
+      const productSpec = document.getElementById("product-spec");
+      const productCode = document.getElementById("product-item-code");
+      const productGroup = document.getElementById("product-group");
+      const productVideo = document.getElementById("product-video");
+      const placeholderImage = document.getElementById("placeholder-image");
 
-        const savedLanguage = localStorage.getItem("selectedLanguage");
-        productTitle.textContent =
-          savedLanguage === "zh"
-            ? currentProduct.chinese
-            : currentProduct.english;
-        productImage.src = currentProduct.image_url || defaultImage;
-        productSpec.textContent = currentProduct.packaging;
-        productCode.textContent = currentProduct.sku;
-        productGroup.textContent =
-          savedLanguage === "zh"
-            ? groupMappings[currentProduct.group].zh
-            : groupMappings[currentProduct.group].en;
+      const defaultImage =
+        "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/product-placeholder2.webp";
+      const urlParams = new URLSearchParams(window.location.search);
 
-        document.getElementById("item-code").textContent = `${
-          savedLanguage === "zh" ? labels.itemCode.zh : labels.itemCode.en
-        }`;
+      const currentProduct = window.inventoryProducts.find(
+        (product) => String(product.id) === urlParams.get("id")
+      );
 
-        document.getElementById("category").textContent = `${
-          savedLanguage === "zh" ? labels.category.zh : labels.category.en
-        }`;
+      if (currentProduct.video_url) {
+        productVideo.src = currentProduct.video_url;
+        placeholderImage.style.display = "none";
+      } else {
+        productVideo.style.display = "none";
+      }
+
+      if (currentProduct.image_urls.length === 1) {
+        productImagesContainer.style.justifyContent = "center";
+      } else if (currentProduct.image_urls.length === 2) {
+        productImagesContainer.style.justifyContent = "space-around";
+      } else {
+        productImagesContainer.style.justifyContent = "space-between";
+      }
+
+      currentProduct.image_urls.forEach((imageUrl, index) => {
+        const productItem = document.createElement("div");
+        productItem.classList.add("product-item");
+        productItem.style.flex = "0 1 auto";
+
+        const imgElement = document.createElement("img");
+        imgElement.src = imageUrl;
+        imgElement.id = `product-image-${index + 1}`;
+        imgElement.setAttribute("data-large", imageUrl);
+        imgElement.width = 120;
+        imgElement.height = 120;
+        imgElement.style.width = "120px";
+        imgElement.style.height = "120px";
+        imgElement.style.cursor = "pointer";
+        imgElement.setAttribute("onclick", "openModal(this);");
+        productItem.appendChild(imgElement);
+        productImagesContainer.appendChild(productItem);
       });
+
+      const savedLanguage = localStorage.getItem("selectedLanguage");
+      productTitle.textContent =
+        savedLanguage === "zh"
+          ? currentProduct.chinese
+          : currentProduct.english;
+      productSpec.textContent = currentProduct.packaging;
+      productCode.textContent = currentProduct.sku;
+      productGroup.textContent =
+        savedLanguage === "zh"
+          ? groupMappings[currentProduct.group].zh
+          : groupMappings[currentProduct.group].en;
+
+      document.getElementById("item-code").textContent = `${
+        savedLanguage === "zh" ? labels.itemCode.zh : labels.itemCode.en
+      }`;
+
+      document.getElementById("category").textContent = `${
+        savedLanguage === "zh" ? labels.category.zh : labels.category.en
+      }`;
+
+      document.getElementById("packaging").textContent = `${
+        savedLanguage === "zh" ? labels.packaging.zh : labels.packaging.en
+      }`;
+    </script>
+
+    <script>
+      function openModal(img) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modal-img");
+        modalImg.src = img.getAttribute("data-large");
+        modal.style.display = "block";
+        modalImg.onload = function () {
+          modalImg.style.opacity = 1;
+        };
+      }
+
+      function closeModal() {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modal-img");
+        modalImg.style.opacity = 0;
+        setTimeout(function () {
+          modal.style.display = "none";
+        }, 500);
+      }
     </script>
   </body>
 </html>
