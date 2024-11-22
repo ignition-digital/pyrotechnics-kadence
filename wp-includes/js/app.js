@@ -1,66 +1,18 @@
-async function fetchAllProducts() {
-  const cacheName = "product-cache";
-  const version = 1.3;
-  const inventoryProductsUrl = `data/inventory.json?v=${version}`;
-
-  const cache = await caches.open(cacheName);
-  const cachedResponse = await cache.match(inventoryProductsUrl);
-
-  const networkResponse = await fetchProductsFromJsonFile(inventoryProductsUrl);
-  cache.put(
-    inventoryProductsUrl,
-    new Response(JSON.stringify(networkResponse))
-  );
-  return networkResponse;
-
-  // if (cachedResponse) {
-  //   return cachedResponse.json();
-  // } else {
-  //   const networkResponse = await fetchProductsFromJsonFile(
-  //     inventoryProductsUrl
-  //   );
-  //   cache.put(
-  //     inventoryProductsUrl,
-  //     new Response(JSON.stringify(networkResponse))
-  //   );
-  //   return networkResponse;
-  // }
-}
-
-function fetchProductsFromJsonFile(jsonFileUrl) {
-  return new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", jsonFileUrl, true);
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          const products = JSON.parse(xhr.responseText);
-          resolve(products);
-        } else {
-          reject(new Error("Error fetching products: " + xhr.status));
-        }
-      }
-    };
-    xhr.send();
-  });
-}
-
-function renderProductList(products) {
-  const productContainer = document.getElementById("pp-image-gallery-38bff30");
-  productContainer.innerHTML = "";
-  products.forEach(function (product) {
-    var productHTML = generateProductHTML(product);
-    productContainer.innerHTML += productHTML;
-  });
-
-  // Trigger reflow to ensure styles are applied
-  productContainer.offsetHeight;
+function renderProductList(products, containerId) {
+  const productContainer = document.getElementById(containerId);
+  if (productContainer) {
+    productContainer.innerHTML = "";
+    products.forEach(function (product) {
+      var productHTML = generateProductHTML(product);
+      productContainer.innerHTML += productHTML;
+    });
+  }
 }
 
 function generateProductHTML(product) {
   const defaultImage =
     "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/product-placeholder2.webp";
-  const imageUrl = product.image_url || defaultImage;
+  const imageUrl = product.image_urls?.[0] || defaultImage;
   const savedLanguage = localStorage.getItem("selectedLanguage");
   let productName = savedLanguage === "zh" ? product.chinese : product.english;
 
@@ -72,13 +24,13 @@ function generateProductHTML(product) {
             <div class="pp-ins-filter-target pp-image-gallery-thumbnail">
               <img
                 decoding="async"
-                class="pp-gallery-slide-image"
+                class="pp-gallery-slide-image product-image-border"
                 src="${defaultImage}" 
                 srcset="${imageUrl} 1x, ${imageUrl} 2x" 
                 alt=""
                 data-no-lazy="1"
                 loading="lazy"
-                />
+              />
             </div>
             <div class="pp-image-overlay pp-media-overlay"></div>
             <div class="pp-gallery-image-content pp-media-content"></div>
