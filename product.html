@@ -1657,7 +1657,7 @@
                                     display: block;"></div><div class="product-images" id="product-images-container" style="display: flex;
                                   justify-content: space-between;
                                   gap: 10px;
-                                  margin-top: 15px;"></div><!-- Modal for Enlarge Image --><div id="myModal" style="display: none;
+                                  margin-top: 15px;"></div><!-- Modal for Enlarge Image --><!-- Modal for Enlarge Image --><div id="myModal" style="display: none;
                                   position: fixed;
                                   z-index: 999;
                                   left: 0;
@@ -1674,7 +1674,25 @@
                                     margin: auto;
                                     display: block;
                                     opacity: 0;
-                                    transition: opacity 0.5s ease-in-out;"></div></div></div></div></div><div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9de5a51 animated-slow elementor-invisible" data-id="9de5a51" data-element_type="column" data-settings='{"animation_tablet":"fadeInLeft","animation":"fadeInRight","animation_delay":250}'><div class="elementor-widget-wrap elementor-element-populated"><div class="elementor-element elementor-element-b9a45d6 elementor-widget elementor-widget-heading" data-id="b9a45d6" data-element_type="widget" data-widget_type="heading.default"><div class="elementor-widget-container"><h3 class="elementor-heading-title elementor-size-default" id="product-title"></h3></div></div><div class="elementor-element elementor-element-433be32 elementor-widget elementor-widget-text-editor" data-id="433be32" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><ul class="elementor-icon-list-items"><br><br><li class="elementor-icon-list-item"><i id="item-code"></i> : <span class="elementor-icon-list-text" id="product-item-code"></span></li><li class="elementor-icon-list-item"><i id="category"></i> : <span class="elementor-icon-list-text" id="product-group"></span></li><li class="elementor-icon-list-item"><i id="packaging"></i> : <span class="elementor-icon-list-text" id="product-spec"></span></li></ul></div></div><div class="elementor-element elementor-element-a42caf1 fluentform-widget-submit-button-custom elementor-widget elementor-widget-elementskit-fluent-forms" data-id="a42caf1" data-element_type="widget" data-widget_type="elementskit-fluent-forms.default"><div class="elementor-widget-container"><div class="ekit-wid-con"><div class="fluentform-widget-wrapper hide-fluent-form-labels fluentform-widget-align-default"></div></div></div></div></div></div></div></section></div></div></div></section><section class="elementor-section elementor-top-section elementor-element elementor-element-cab73d6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cab73d6" data-element_type="section"><div class="elementor-container elementor-column-gap-default"><div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-efe157f" data-id="efe157f" data-element_type="column"><div class="elementor-widget-wrap elementor-element-populated"><div class="elementor-element elementor-element-487847e elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="487847e" data-element_type="widget" data-widget_type="divider.default"><div class="elementor-widget-container"><div class="elementor-divider"><span class="elementor-divider-separator"></span></div></div></div></div></div></div></section></div><footer style="background-color: rgba(0, 0, 0, 0.6);
+                                    transition: opacity 0.5s ease-in-out;"> <button id="prev-btn" onclick="navigateImage(-1)" style="position: absolute;
+                                    top: 50%;
+                                    left: 20px;
+                                    transform: translateY(-50%);
+                                    font-size: 20px;
+                                    color: white;
+                                    background: rgba(0, 0, 0, 0.5);
+                                    border: none;
+                                    padding: 10px;
+                                    cursor: pointer;">&#10094;<!-- Left arrow --></button> <button id="next-btn" onclick="navigateImage(1)" style="position: absolute;
+                                    top: 50%;
+                                    right: 20px;
+                                    transform: translateY(-50%);
+                                    font-size: 20px;
+                                    color: white;
+                                    background: rgba(0, 0, 0, 0.5);
+                                    border: none;
+                                    padding: 10px;
+                                    cursor: pointer;">&#10095;<!-- Right arrow --></button></div></div></div></div></div><div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9de5a51 animated-slow elementor-invisible" data-id="9de5a51" data-element_type="column" data-settings='{"animation_tablet":"fadeInLeft","animation":"fadeInRight","animation_delay":250}'><div class="elementor-widget-wrap elementor-element-populated"><div class="elementor-element elementor-element-b9a45d6 elementor-widget elementor-widget-heading" data-id="b9a45d6" data-element_type="widget" data-widget_type="heading.default"><div class="elementor-widget-container"><h3 class="elementor-heading-title elementor-size-default" id="product-title"></h3></div></div><div class="elementor-element elementor-element-433be32 elementor-widget elementor-widget-text-editor" data-id="433be32" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><ul class="elementor-icon-list-items"><br><br><li class="elementor-icon-list-item"><i id="item-code"></i> : <span class="elementor-icon-list-text" id="product-item-code"></span></li><li class="elementor-icon-list-item"><i id="category"></i> : <span class="elementor-icon-list-text" id="product-group"></span></li><li class="elementor-icon-list-item"><i id="packaging"></i> : <span class="elementor-icon-list-text" id="product-spec"></span></li></ul></div></div><div class="elementor-element elementor-element-a42caf1 fluentform-widget-submit-button-custom elementor-widget elementor-widget-elementskit-fluent-forms" data-id="a42caf1" data-element_type="widget" data-widget_type="elementskit-fluent-forms.default"><div class="elementor-widget-container"><div class="ekit-wid-con"><div class="fluentform-widget-wrapper hide-fluent-form-labels fluentform-widget-align-default"></div></div></div></div></div></div></div></section></div></div></div></section><section class="elementor-section elementor-top-section elementor-element elementor-element-cab73d6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cab73d6" data-element_type="section"><div class="elementor-container elementor-column-gap-default"><div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-efe157f" data-id="efe157f" data-element_type="column"><div class="elementor-widget-wrap elementor-element-populated"><div class="elementor-element elementor-element-487847e elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="487847e" data-element_type="widget" data-widget_type="divider.default"><div class="elementor-widget-container"><div class="elementor-divider"><span class="elementor-divider-separator"></span></div></div></div></div></div></div></section></div><footer style="background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -2138,21 +2156,51 @@
 
       document.getElementById("packaging").textContent = `${
         savedLanguage === "zh" ? labels.packaging.zh : labels.packaging.en
-      }`;</script><script>function openModal(img) {
-        var modal = document.getElementById("myModal");
-        var modalImg = document.getElementById("modal-img");
-        modalImg.src = img.getAttribute("data-large");
+      }`;</script><script>let currentIndex = 0;
+      let imageUrls = []; // Array to store all image URLs
+
+      // Function to open the modal with the clicked image
+      function openModal(img) {
+        const modal = document.getElementById("myModal");
+        const modalImg = document.getElementById("modal-img");
+
+        // Retrieve all image URLs from the container
+        imageUrls = Array.from(
+          document.querySelectorAll("#product-images-container img")
+        ).map((img) => img.getAttribute("data-large"));
+
+        // Set the current index based on the clicked image
+        currentIndex = imageUrls.indexOf(img.getAttribute("data-large"));
+
+        // Show the modal with the clicked image
+        modalImg.src = imageUrls[currentIndex];
         modal.style.display = "block";
-        modalImg.onload = function () {
-          modalImg.style.opacity = 1;
-        };
+        modalImg.style.opacity = 1; // Fade in
       }
 
+      // Function to navigate images
+      function navigateImage(direction) {
+        const modalImg = document.getElementById("modal-img");
+
+        // Update the current index
+        currentIndex =
+          (currentIndex + direction + imageUrls.length) % imageUrls.length;
+
+        // Update the modal image source
+        modalImg.style.opacity = 0; // Fade out
+        setTimeout(() => {
+          modalImg.src = imageUrls[currentIndex];
+          modalImg.style.opacity = 1; // Fade in
+        }, 300); // Matches the transition duration
+      }
+
+      // Function to close the modal
       function closeModal() {
-        var modal = document.getElementById("myModal");
-        var modalImg = document.getElementById("modal-img");
-        modalImg.style.opacity = 0;
-        setTimeout(function () {
+        const modal = document.getElementById("myModal");
+        const modalImg = document.getElementById("modal-img");
+
+        modalImg.style.opacity = 0; // Fade out
+        setTimeout(() => {
           modal.style.display = "none";
-        }, 500);
+        }, 300); // Matches the transition duration
       }</script></body></html>
