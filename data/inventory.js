@@ -17,7 +17,7 @@ window.inventoryProducts = [
     sku: "3302",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/firecracker-series/3302.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3302+-+CILI+PADI+3000_S+3000%E5%A4%B4+%E9%A1%BA%E5%88%A9%E7%BA%A2%E7%82%AE.png",
     ],
     video_url: "",
     english: "CILI PADI 3000'S",
@@ -29,7 +29,7 @@ window.inventoryProducts = [
     sku: "3700",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/firecracker-series/3700.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3700+-+8+FT-+RED+CRACKER+8%E5%B0%BA%E7%BA%A2%E7%82%AE+.jpg",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/a-firecracker-series/3700+-+8+FT-+RED+CRACKER+8%E5%B0%BA%E7%BA%A2%E7%82%AE.mp4",
@@ -42,7 +42,7 @@ window.inventoryProducts = [
     sku: "3702",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/firecracker-series/3702.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3702+-+8+FT-+RED+CRACKER+KING+8%E5%B0%BA%E7%BA%A2%E7%82%AE%E7%8E%8B(%E5%BD%A9%E5%85%89).png",
     ],
     video_url: "",
     english: "8 FT- RED CRACKER KING",
@@ -54,7 +54,7 @@ window.inventoryProducts = [
     sku: "3703",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/firecracker-series/3703.JPG",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3703+-+8+FT-+GOLD+CRACKER+8%E5%B0%BA%E9%BB%84%E9%87%91%E6%BB%A1%E5%9C%B0(%E5%B8%A6%E8%83%86).jpg",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/a-firecracker-series/3703+-+8+FT-+GOLD+CRACKER+8%E5%B0%BA%E9%BB%84%E9%87%91%E6%BB%A1%E5%9C%B0(%E5%B8%A6%E8%83%86).mp4",
@@ -67,7 +67,7 @@ window.inventoryProducts = [
     sku: "3705",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/firecracker-series/3705.jpg",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3705+-+8+FT-+SELAMAT+HARI+RAYA+CRACKER+8%E5%B0%BA%E9%9D%92%E7%82%AE.jpg",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/a-firecracker-series/3705+-+8+FT-+SELAMAT+HARI+RAYA+CRACKER+8%E5%B0%BA%E9%9D%92%E7%82%AE.mp4",
@@ -80,7 +80,7 @@ window.inventoryProducts = [
     sku: "3800",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/firecracker-series/3800.jpg",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3800+-+18FT-+ROSE+PINK+CRACKER+(1.0)+18%E5%B0%BA%E7%8E%AB%E7%91%B0%E7%BA%A2%E5%BD%A9%E5%85%89+(1.0).jpg",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/a-firecracker-series/3800+-+18FT-+ROSE+PINK+CRACKER+(1.0)+18%E5%B0%BA%E7%8E%AB%E7%91%B0%E7%BA%A2%E5%BD%A9%E5%85%89+(1.0).mp4",
@@ -116,7 +116,7 @@ window.inventoryProducts = [
     sku: "3806",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/firecracker-series/3806.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3806+-+39000_S+GOLDEN+RED+CRACKER+%E4%B8%89%E8%90%AC%E7%8E%96%E5%9C%9F%E8%B1%AA%E9%87%91%E7%BA%A2.png",
     ],
     video_url: "",
     english: "39000'S GOLDEN RED CRACKER",
@@ -128,7 +128,7 @@ window.inventoryProducts = [
     sku: "3807",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/firecracker-series/3807.JPG",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3807+-+88FT-+ROSE+PINK+CRACKER+88%E5%B0%BA%E7%8E%AB%E7%91%B0%E7%BA%A2.png",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/a-firecracker-series/3807+-+88FT-+ROSE+PINK+CRACKER+88%E5%B0%BA%E7%8E%AB%E7%91%B0%E7%BA%A2.mp4",
@@ -141,7 +141,7 @@ window.inventoryProducts = [
     sku: "3808",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/images-resized/a-firecracker-series/3808+-+88FT+-+RED+CRACKER+88%E5%B0%BA%E7%89%B9%E7%BA%A2%E7%BA%A2%E7%82%AE.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3808+-+88FT+-+RED+CRACKER+88%E5%B0%BA%E7%89%B9%E7%BA%A2%E7%BA%A2%E7%82%AE.png",
     ],
     video_url: "",
     english: "88FT - RED CRACKER",
@@ -153,7 +153,7 @@ window.inventoryProducts = [
     sku: "3809",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/firecracker-series/3809.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3809+-+88FT-+GOLDEN+YELLOW+CRACKER+88%E5%B0%BA%E6%BB%A1%E5%9C%B0%E9%BB%84%E9%87%91.png",
     ],
     video_url: "",
     english: "88FT- GOLDEN YELLOW CRACKER",
@@ -165,7 +165,7 @@ window.inventoryProducts = [
     sku: "3810",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/firecracker-series/3810.jpeg",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3810+-+108FT-+ROSE+PINK+CRACKER+108%E5%B0%BA%E7%8E%AB%E7%91%B0%E7%BA%A2.png",
     ],
     video_url: "",
     english: "108FT- ROSE PINK CRACKER",
@@ -189,7 +189,7 @@ window.inventoryProducts = [
     sku: "3815",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/firecracker-series/3815.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3815+-+118FT-+RED+PURPLE+CRACKER+118%E5%B0%BA%E5%A4%A7%E7%BA%A2%E5%A4%A7%E7%B4%AB.png",
     ],
     video_url: "",
     english: "118FT- RED PURPLE CRACKER",
@@ -201,7 +201,7 @@ window.inventoryProducts = [
     sku: "3818",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/firecracker-series/3818.jpeg",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3818+-+30+FT+-CRACKER+(RED%2CGOLD%2CPINK)+30%E5%B0%BA%E6%97%B6%E6%9D%A5%E8%BF%90%E8%BD%AC%EF%BC%88%E7%BA%A2%2C%E9%87%91%2C%E7%B2%89%EF%BC%89.png",
     ],
     video_url: "",
     english: "30 FT -CRACKER (RED,GOLD,PINK)",
@@ -213,7 +213,7 @@ window.inventoryProducts = [
     sku: "3900",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/images-resized/a-firecracker-series/3900+-+5000+RED+CRAKER+(BOM)+5000%E7%A4%BC%E7%82%AE%26%E5%B8%A6%E8%83%86.jpg",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3900+-+5000+RED+CRAKER+(BOM)+5000%E7%A4%BC%E7%82%AE%26%E5%B8%A6%E8%83%86.jpg",
     ],
     video_url: "",
     english: "5000 RED CRAKER (BOM)",
@@ -225,7 +225,7 @@ window.inventoryProducts = [
     sku: "3901",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/images-resized/a-firecracker-series/3901+-+10000+RED+CRAKER+(BOM)+10000%E7%A4%BC%E7%82%AE%26%E5%B8%A6%E8%83%86.jpg",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3901+-+10000+RED+CRAKER+(BOM)+10000%E7%A4%BC%E7%82%AE%26%E5%B8%A6%E8%83%86.jpg",
     ],
     video_url: "",
     english: "10000 RED CRAKER (BOM)",
@@ -257,7 +257,7 @@ window.inventoryProducts = [
     sku: "3904",
     group: "firecracker-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/images-resized/a-firecracker-series/3904+-+50000+RED+CRAKER+(BOM)+50000%E4%B8%87%E5%A4%B4%E7%A4%BC%E7%82%AE.jpg",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/a-firecracker-series/3904+-+50000+RED+CRAKER+(BOM)+50000%E4%B8%87%E5%A4%B4%E7%A4%BC%E7%82%AE.jpg",
     ],
     video_url: "",
     english: "50000 RED CRAKER (BOM)",
@@ -282,7 +282,7 @@ window.inventoryProducts = [
     sku: "4000C",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4000C.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/images-resized/b-fireworks-series/4000C+-+4%E2%80%9C+49+-+SHOT+CAKE+(MY)+(8)+4%E2%80%9D+49%E5%8F%91%E7%9B%86%E8%8A%B1+(%E6%A8%A1%E5%8E%8B%E5%9E%8B)+(8).png",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/b-fireworks-series/4000C+-+4%E2%80%9C+49+-+SHOT+CAKE+(MY)+(8)+4%E2%80%9D+49%E5%8F%91%E7%9B%86%E8%8A%B1+(%E6%A8%A1%E5%8E%8B%E5%9E%8B)+(8).mp4",
@@ -308,7 +308,7 @@ window.inventoryProducts = [
     sku: "4100B",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4100B.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4100B+-+4_+138+-+SHOT+CAKE+(8)+4_+138%E5%8F%91%E7%9B%86%E8%8A%B1+-+%E7%A6%8F%E6%BB%A1%E5%A4%A9%E4%B8%8B+(8).png",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/b-fireworks-series/4100B+-+4%E2%80%9C138+-+SHOT+CAKE+(8)+4%E2%80%9D138%E5%8F%91%E7%9B%86%E8%8A%B1+-+%E7%A6%8F%E6%BB%A1%E5%A4%A9%E4%B8%8B+(8).mp4",
@@ -321,7 +321,7 @@ window.inventoryProducts = [
     sku: "4100C",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4100C.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4100C+-+4%E2%80%9C+138+-+SHOT+CAKE+(MY)+(8)+4%E2%80%9D+138%E5%8F%91%E7%9B%86%E8%8A%B1+(%E6%A8%A1%E5%8E%8B%E5%9E%8B)+(8).png",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/b-fireworks-series/4100C+-+4%E2%80%9C+138+-+SHOT+CAKE+(MY)+(8)+4%E2%80%9D+138%E5%8F%91%E7%9B%86%E8%8A%B1+(%E6%A8%A1%E5%8E%8B%E5%9E%8B)+(8).mp4",
@@ -334,7 +334,7 @@ window.inventoryProducts = [
     sku: "4100D",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/images-resized/b-fireworks-series/4100D+-+4%E2%80%9C138+-+SHOT+CAKE+(6)+4%E2%80%9D138%E5%8F%91%E7%9B%86%E8%8A%B1+(%E7%9B%B4%E5%9E%8B)+(6).jpg",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4100D+-+4%E2%80%9C138+-+SHOT+CAKE+(6)+4%E2%80%9D138%E5%8F%91%E7%9B%86%E8%8A%B1+(%E7%9B%B4%E5%9E%8B)+(6).jpg",
     ],
     video_url: "",
     english: '4" 138 - SHOT CAKE (6)',
@@ -346,7 +346,7 @@ window.inventoryProducts = [
     sku: "4103",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4103.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4103+-+6%E2%80%9C+138+-+SHOT+CAKE+6%E2%80%9D+138%E5%8F%91%E7%9B%86%E8%8A%B1+-+%E8%BF%8E%E6%98%A5%E7%BA%B3%E7%A6%8F.png",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/b-fireworks-series/4103+-+6%E2%80%9C+138+-+SHOT+CAKE+6%E2%80%9D+138%E5%8F%91%E7%9B%86%E8%8A%B1+-+%E8%BF%8E%E6%98%A5%E7%BA%B3%E7%A6%8F.mp4",
@@ -359,7 +359,10 @@ window.inventoryProducts = [
     sku: "4104",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4104.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4104+-+5%E2%80%9C+138+(4+IN+1)+552+SHOT+5%E2%80%9D+138-%E5%8D%88%E5%A4%9C%E7%9A%84%E6%B5%AA%E6%BC%AB++(4%E5%90%881)+552%E5%8F%91+1.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4104+-+5%E2%80%9C+138+(4+IN+1)+552+SHOT+5%E2%80%9D+138-%E5%8D%88%E5%A4%9C%E7%9A%84%E6%B5%AA%E6%BC%AB++(4%E5%90%881)+552%E5%8F%91+2.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4104+-+5%E2%80%9C+138+(4+IN+1)+552+SHOT+5%E2%80%9D+138-%E5%8D%88%E5%A4%9C%E7%9A%84%E6%B5%AA%E6%BC%AB++(4%E5%90%881)+552%E5%8F%91+3.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4104+-+5%E2%80%9C+138+(4+IN+1)+552+SHOT+5%E2%80%9D+138-%E5%8D%88%E5%A4%9C%E7%9A%84%E6%B5%AA%E6%BC%AB++(4%E5%90%881)+552%E5%8F%91+4.png",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/b-fireworks-series/4104+-+5%E2%80%9C+138+(4+IN+1)+552+SHOT+5%E2%80%9D+138-%E5%8D%88%E5%A4%9C%E7%9A%84%E6%B5%AA%E6%BC%AB++(4%E5%90%881)+552%E5%8F%91.mp4",
@@ -372,7 +375,7 @@ window.inventoryProducts = [
     sku: "4105",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4105.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4105+-+S9%E2%80%9C+138+-+SHOT+CAKE+(1.2)+S9%E2%80%9D+138+-+%E5%90%89%E7%A5%A5%E5%A6%82%E6%84%8F+(1.2).png",
     ],
     video_url: "",
     english: 'S9" 138 - SHOT CAKE (1.2)',
@@ -384,7 +387,7 @@ window.inventoryProducts = [
     sku: "4106",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4106.jpeg",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4106+-+5%E2%80%9C+168+V+-+SHOT+CAKE+5%E2%80%9D+168V+-+%E5%85%AB%E5%96%9C%E4%B8%B4%E9%97%A8.jpeg",
     ],
     video_url: "",
     english: '5" 168 V - SHOT CAKE',
@@ -410,7 +413,7 @@ window.inventoryProducts = [
     sku: "4111",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4111.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4111+-+S9%E2%80%9C+168V+-+FAN+CAKE+S9%E2%80%9D+168V+-+%E5%A4%8F%E5%A8%81%E5%A4%B7%E4%B9%8B%E5%A4%9C.png",
     ],
     video_url: "",
     english: "S9'' 168V - FAN CAKE",
@@ -422,7 +425,7 @@ window.inventoryProducts = [
     sku: "4112",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4112.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4112+-+5%E2%80%9C+188+-+SHOT+CAKE+5%E2%80%9D+188+%E5%8F%91+-%E7%99%BE%E4%B8%87%E5%AF%8C%E7%BF%81.png",
     ],
     video_url: "",
     english: '5" 188 - SHOT CAKE',
@@ -434,7 +437,7 @@ window.inventoryProducts = [
     sku: "4113",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4113.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4113+-+S9%E2%80%9C+188M+-+FAN+CAKE+S9_188M+-+%E4%BA%BF%E8%90%AC%E5%AF%8C%E7%BF%81.png",
     ],
     video_url: "",
     english: "S9' 188M - FAN CAKE",
@@ -446,7 +449,7 @@ window.inventoryProducts = [
     sku: "4114",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4114.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4114+-+S9%E2%80%9D+198+-+SHOT+CAKE+S9%E2%80%9C198+-+%E8%B4%A2%E5%AF%8C%E4%B8%B4%E9%97%A8.png",
     ],
     video_url: "",
     english: 'S9" 198 - SHOT CAKE',
@@ -458,7 +461,7 @@ window.inventoryProducts = [
     sku: "4123",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4123.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4123+-++5%E2%80%9D+300++5%E2%80%9C+300+%E5%8F%91+-+%E5%AD%94%E9%9B%80%E5%BC%80%E5%B1%8F.png",
     ],
     video_url: "",
     english: "5'' 300",
@@ -470,7 +473,7 @@ window.inventoryProducts = [
     sku: "4129",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4129.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4129+-+S9%E2%80%9D+238V+-+FAN+CAKE+S9%E2%80%9C+238V+-+%E7%B2%BE%E9%80%89%E6%AC%A2%E4%B9%90%E4%BB%8A%E5%AE%B5.png",
     ],
     video_url: "",
     english: 'S9" 238V - FAN CAKE',
@@ -482,7 +485,7 @@ window.inventoryProducts = [
     sku: "4131",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4131.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4131+-+S6%E2%80%9D+399V+-+FAN+CAKE+S6%E2%80%9C+399+-+%E5%A4%A9%E4%B8%8B%E6%97%A0%E6%95%8C.png",
     ],
     video_url: "",
     english: 'S6" 399V - FAN CAKE',
@@ -494,7 +497,7 @@ window.inventoryProducts = [
     sku: "4132",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4132.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4132+-+S9%E2%80%9D+228M+-+FAN+CAKE+S9%E2%80%9C+228M+-+%E6%98%A5%E5%A4%8F%E7%A7%8B%E5%86%AC.png",
     ],
     video_url: "",
     english: 'S9" 228M - FAN CAKE',
@@ -506,7 +509,7 @@ window.inventoryProducts = [
     sku: "4133",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4133.JPG",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4133+-+S9%E2%80%9D+150M+-+FAN+CAKE+S9%E2%80%9C+150M+-+%E6%83%8A%E8%89%B3%E7%B1%B3%E5%85%B0%E4%B9%8B%E5%A4%9C.JPG",
     ],
     video_url: "",
     english: 'S9" 150M - FAN CAKE',
@@ -518,7 +521,7 @@ window.inventoryProducts = [
     sku: "4136",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4136.JPG",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4136+-+S9%E2%80%9D+300M+-+FAN+CAKE+S9%E2%80%9C+300M+-++%E7%82%AB%E8%80%80%E6%98%9F%E7%A9%BA.JPG",
     ],
     video_url: "",
     english: 'S9" 300M - FAN CAKE',
@@ -530,7 +533,7 @@ window.inventoryProducts = [
     sku: "4137",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4137.jpg",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4137+-+S10%E2%80%9D+308M++-+FAN+CAKE+S10%E2%80%9C+308M+-+%E5%94%AF%E6%88%91%E7%8B%AC%E5%B0%8A.jpg",
     ],
     video_url: "",
     english: 'S10" 308M  - FAN CAKE',
@@ -542,7 +545,7 @@ window.inventoryProducts = [
     sku: "4138",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4138.jpg",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4138+-+S9%E2%80%9D+298+-+FAN+CAKE+S9%E2%80%9C+298+-+%E7%BD%91%E7%BA%A2.%E9%AD%85%E5%8A%9B%E5%B7%B4%E9%BB%8E%E6%98%A5%E5%A4%A9.jpg",
     ],
     video_url: "",
     english: 'S9" 298 - FAN CAKE',
@@ -554,7 +557,7 @@ window.inventoryProducts = [
     sku: "4139",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4139.JPG",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4139+-+S10%E2%80%9D+90S+FAN+CAKE+S10%E2%80%9C+90S+-+%E8%8A%B1%E8%8A%B1%E5%AE%87%E5%AE%99+(1.5).JPG",
     ],
     video_url: "",
     english: 'S10" 90S FAN CAKE',
@@ -565,7 +568,9 @@ window.inventoryProducts = [
     id: "47",
     sku: "4140",
     group: "fireworks-series",
-    image_urls: [],
+    image_urls: [
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4140+-+S9%E2%80%9C138M+MAGIC+FAIRY+S9%E2%80%9D138M+-+%E9%AD%94%E6%B3%95%E7%B2%BE%E7%81%B5.png",
+    ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/b-fireworks-series/4140+-+S9%E2%80%9C138M+MAGIC+FAIRY+S9%E2%80%9D138M+-+%E9%AD%94%E6%B3%95%E7%B2%BE%E7%81%B5.mp4",
     english: 'S9" 138M MAGIC FAIRY',
@@ -577,7 +582,7 @@ window.inventoryProducts = [
     sku: "4141",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4141.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4141+-+S9%E2%80%9D+138M+THE+GREAT+2025+9%E2%80%9C+138M+-+%E6%A5%B5%E5%93%812025.png",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/b-fireworks-series/4141+-+S9%E2%80%9D+138M+THE+GREAT+2025+9%E2%80%9C+138M+-+%E6%A5%B5%E5%93%812025.mp4",
@@ -603,7 +608,7 @@ window.inventoryProducts = [
     sku: "4149",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4149.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4149+-+S9%E2%80%9D+138+BLUE+FAIRY+9%E2%80%9C+138%E5%8F%91+%E8%93%9D%E7%B2%BE%E7%81%B5.png",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/b-fireworks-series/4149+-+S9%E2%80%9D+138+BLUE+FAIRY+9%E2%80%9C+138%E5%8F%91+%E8%93%9D%E7%B2%BE%E7%81%B5.mp4",
@@ -646,7 +651,7 @@ window.inventoryProducts = [
     sku: "4401",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4401.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4401+-+5%E2%80%9D+36+-+SHOT+CAKE+5%E2%80%9C+36%E5%8F%91%E7%9B%86%E8%8A%B1.png",
     ],
     video_url: "",
     english: '5" 36 - SHOT CAKE',
@@ -658,7 +663,8 @@ window.inventoryProducts = [
     sku: "4404",
     group: "fireworks-series",
     image_urls: [
-      "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/fireworks-series/4404.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4404+-+9%E2%80%9D+36%E5%8F%91+%E7%8B%BC%E5%9A%8E(AC)+1.png",
+      "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/images-resized/b-fireworks-series/4404+-+S9%E2%80%9D+36+WOLF+(2+style)+9%E2%80%9C+36%E5%8F%91+%E7%8B%BC%E5%9A%8E(%E4%B8%A4%E6%AC%BE).png",
     ],
     video_url:
       "https://public-110924.s3.ap-southeast-1.amazonaws.com/pyrotechnics/191124/videos/b-fireworks-series/4404+-+S9%E2%80%9D+36+WOLF+(2+style)+9%E2%80%9C+36%E5%8F%91+%E7%8B%BC%E5%9A%8E(%E4%B8%A4%E6%AC%BE).mp4",
