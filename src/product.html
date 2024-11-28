@@ -26,6 +26,39 @@
         border-color: #007bff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
+
+      .recommended-product-images {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        margin-top: 15px;
+        flex-wrap: wrap;
+      }
+
+      .product-item {
+        flex: 0 1 auto;
+        text-align: center;
+        max-width: 120px;
+      }
+
+      .product-item img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+      }
+
+      .product-caption {
+        font-family: "Jost", Sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--global-palette-highlight);
+        margin-top: 8px;
+        width: 100%;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     </style>
   </head>
   <body
@@ -118,13 +151,6 @@
                 data-settings='{"background_background":"classic"}'
               >
                 <div class="elementor-widget-wrap elementor-element-populated">
-                  <a
-                    href="our-fireworks.html"
-                    style="background-color: #ff0000"
-                    class="button"
-                    >Back</a
-                  >
-
                   <section
                     class="elementor-section elementor-inner-section elementor-element elementor-element-31636729 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="31636729"
@@ -199,6 +225,7 @@
                               ></div>
 
                               <!-- Modal for Enlarge Image -->
+                              <!-- Modal for Enlarge Image -->
                               <div
                                 id="myModal"
                                 style="
@@ -237,6 +264,44 @@
                                     transition: opacity 0.5s ease-in-out;
                                   "
                                 />
+                                <button
+                                  id="prev-btn"
+                                  onclick="navigateImage(-1)"
+                                  style="
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 20px;
+                                    transform: translateY(-50%);
+                                    font-size: 20px;
+                                    color: white;
+                                    background: rgba(0, 0, 0, 0.5);
+                                    border: none;
+                                    padding: 10px;
+                                    cursor: pointer;
+                                  "
+                                >
+                                  &#10094;
+                                  <!-- Left arrow -->
+                                </button>
+                                <button
+                                  id="next-btn"
+                                  onclick="navigateImage(1)"
+                                  style="
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 20px;
+                                    transform: translateY(-50%);
+                                    font-size: 20px;
+                                    color: white;
+                                    background: rgba(0, 0, 0, 0.5);
+                                    border: none;
+                                    padding: 10px;
+                                    cursor: pointer;
+                                  "
+                                >
+                                  &#10095;
+                                  <!-- Right arrow -->
+                                </button>
                               </div>
                             </div>
                           </div>
@@ -345,10 +410,18 @@
                     data-element_type="widget"
                     data-widget_type="divider.default"
                   >
+                    <h4
+                      style="text-align: center"
+                      class="elementor-heading-title elementor-size-default"
+                      data-translate="productPage.related_products"
+                    ></h4>
+                    <br />
                     <div class="elementor-widget-container">
                       <div class="elementor-divider">
                         <span class="elementor-divider-separator"></span>
                       </div>
+
+                      <div class="recommended-product-images"></div>
                     </div>
                   </div>
                 </div>
@@ -567,6 +640,43 @@
     </div>
 
     <script>
+      let currentIndex = 0;
+      let imageUrls = [];
+      function openModal(img) {
+        const modal = document.getElementById("myModal");
+        const modalImg = document.getElementById("modal-img");
+        imageUrls = Array.from(
+          document.querySelectorAll("#product-images-container img")
+        ).map((img) => img.getAttribute("data-large"));
+        currentIndex = imageUrls.indexOf(img.getAttribute("data-large"));
+        modalImg.src = imageUrls[currentIndex];
+        modal.style.display = "block";
+        modalImg.style.opacity = 1;
+      }
+
+      function navigateImage(direction) {
+        const modalImg = document.getElementById("modal-img");
+        currentIndex =
+          (currentIndex + direction + imageUrls.length) % imageUrls.length;
+
+        modalImg.style.opacity = 0;
+        setTimeout(() => {
+          modalImg.src = imageUrls[currentIndex];
+          modalImg.style.opacity = 1;
+        }, 300);
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("myModal");
+        const modalImg = document.getElementById("modal-img");
+
+        modalImg.style.opacity = 0;
+        setTimeout(() => {
+          modal.style.display = "none";
+        }, 300);
+      }
+    </script>
+    <script>
       const labels = {
         itemCode: { en: "Item Code", zh: "项目代码" },
         category: { en: "Category", zh: "类别" },
@@ -612,7 +722,7 @@
       if (currentProduct.image_urls.length === 1) {
         productImagesContainer.style.justifyContent = "center";
       } else if (currentProduct.image_urls.length === 2) {
-        productImagesContainer.style.justifyContent = "space-around";
+        productImagesContainer.style.justifyContent = "space-evenly";
       } else {
         productImagesContainer.style.justifyContent = "space-between";
       }
@@ -659,27 +769,47 @@
       document.getElementById("packaging").textContent = `${
         savedLanguage === "zh" ? labels.packaging.zh : labels.packaging.en
       }`;
-    </script>
 
-    <script>
-      function openModal(img) {
-        var modal = document.getElementById("myModal");
-        var modalImg = document.getElementById("modal-img");
-        modalImg.src = img.getAttribute("data-large");
-        modal.style.display = "block";
-        modalImg.onload = function () {
-          modalImg.style.opacity = 1;
-        };
+      function populateRandomProducts(currentProduct, inventoryProducts) {
+        const sameGroupProducts = inventoryProducts.filter(
+          (product) =>
+            product.group === currentProduct.group &&
+            product.id !== currentProduct.id
+        );
+        const shuffledProducts = sameGroupProducts.sort(
+          () => Math.random() - 0.5
+        );
+        const selectedProducts = shuffledProducts.slice(0, 5);
+        const recommendedImagesContainer = document.querySelector(
+          ".recommended-product-images"
+        );
+        recommendedImagesContainer.innerHTML = "";
+        selectedProducts.forEach((product) => {
+          const productItem = document.createElement("div");
+          productItem.className = "product-item";
+          const productImage = document.createElement("img");
+          productImage.src =
+            product.image_urls && product.image_urls[0]
+              ? product.image_urls[0]
+              : defaultImage;
+          productImage.alt = product.english;
+          productImage.style.cursor = "pointer";
+          const productCaption = document.createElement("div");
+          productCaption.className = "product-caption";
+          productCaption.textContent =
+            savedLanguage === "zh" ? product.chinese : product.english;
+          const productLink = document.createElement("a");
+          productLink.href = `javascript:void(0)`;
+          productLink.addEventListener("click", function () {
+            window.location.href = `/<%= roots %>/product.html?id=${product.id}#specs`;
+          });
+          productItem.appendChild(productImage);
+          productItem.appendChild(productCaption);
+          productLink.appendChild(productItem);
+          recommendedImagesContainer.appendChild(productLink);
+        });
       }
-
-      function closeModal() {
-        var modal = document.getElementById("myModal");
-        var modalImg = document.getElementById("modal-img");
-        modalImg.style.opacity = 0;
-        setTimeout(function () {
-          modal.style.display = "none";
-        }, 500);
-      }
+      populateRandomProducts(currentProduct, window.inventoryProducts);
     </script>
   </body>
 </html>
