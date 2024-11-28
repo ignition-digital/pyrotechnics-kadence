@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 // Define your 'roots' variable
-const ROOTS_URL = "";
+const ROOTS_URL = "pyrotechnics-kadence";
 
 // Define the pages for HtmlWebpackPlugin
 const pages = [
@@ -32,7 +32,6 @@ const htmlPlugins = pages.map(
             "utf-8"
           )
           .replace(/<%= roots %>/g, ROOTS_URL),
-        // Add roots to template parameters
         roots: ROOTS_URL,
       },
       navbar: fs
@@ -59,7 +58,7 @@ module.exports = {
     watchFiles: ["src/**/*.html", "src/**/*.js", "src/**/*.css"],
     hot: true,
     port: 8080,
-    open: true, // Opens the browser automatically
+    open: true,
   },
   plugins: [
     ...htmlPlugins,
@@ -69,6 +68,8 @@ module.exports = {
         { from: "wp-content", to: "wp-content" },
         { from: "i18n", to: "i18n" },
         { from: "data", to: "data" },
+        { from: "src/manifest.json", to: "manifest.json" },
+        { from: "src/service-worker.js", to: "service-worker.js" },
       ],
     }),
   ],

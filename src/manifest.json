@@ -1,0 +1,55 @@
+{
+  "name": "Pyrotechnics",
+  "short_name": "Pyrotechnics",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "scope": ".",
+  "description": "In the heart of Malaysia, a passionate dreamer founded Sky Sparks Fireworks with a vision to ignite joy and unite people through the magic of fireworks.",
+  "prefer_related_applications": true,
+  "icons": [
+    {
+      "src": "wp-content/images/maskable_icon_x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "wp-content/images/maskable_icon_x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "wp-content/images/maskable_icon_x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "wp-content/images/maskable_icon_x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "wp-content/images/maskable_icon_x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "wp-content/images/maskable_icon_x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "wp-content/images/maskable_icon_x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
