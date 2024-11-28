@@ -2130,7 +2130,7 @@
         currentIndex = imageUrls.indexOf(img.getAttribute("data-large"));
         modalImg.src = imageUrls[currentIndex];
         modal.style.display = "block";
-        modalImg.style.opacity = 1; // Fade in
+        modalImg.style.opacity = 1;
       }
 
       function navigateImage(direction) {
@@ -2149,51 +2149,10 @@
         const modal = document.getElementById("myModal");
         const modalImg = document.getElementById("modal-img");
 
-        modalImg.style.opacity = 0; // Fade out
+        modalImg.style.opacity = 0;
         setTimeout(() => {
           modal.style.display = "none";
         }, 300);
-      }
-
-      function populateRandomProducts(currentProduct, inventoryProducts) {
-        const defaultImage =
-          "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/product-placeholder2.webp";
-        const sameGroupProducts = inventoryProducts.filter(
-          (product) =>
-            product.group === currentProduct.group &&
-            product.id !== currentProduct.id
-        );
-        const shuffledProducts = sameGroupProducts.sort(
-          () => Math.random() - 0.5
-        );
-        const selectedProducts = shuffledProducts.slice(0, 5);
-        const recommendedImagesContainer = document.querySelector(
-          ".recommended-product-images"
-        );
-        recommendedImagesContainer.innerHTML = "";
-        selectedProducts.forEach((product) => {
-          const productItem = document.createElement("div");
-          productItem.className = "product-item";
-          const productImage = document.createElement("img");
-          productImage.src =
-            product.image_urls && product.image_urls[0]
-              ? product.image_urls[0]
-              : defaultImage;
-          productImage.alt = product.english;
-          productImage.style.cursor = "pointer";
-          const productCaption = document.createElement("div");
-          productCaption.className = "product-caption";
-          productCaption.textContent = product.english;
-          const productLink = document.createElement("a");
-          productLink.href = `javascript:void(0)`;
-          productLink.addEventListener("click", function () {
-            window.location.href = `/pyrotechnics-kadence/product.html?id=${product.id}#specs`;
-          });
-          productItem.appendChild(productImage);
-          productItem.appendChild(productCaption);
-          productLink.appendChild(productItem);
-          recommendedImagesContainer.appendChild(productLink);
-        });
       }</script><script>const labels = {
         itemCode: { en: "Item Code", zh: "项目代码" },
         category: { en: "Category", zh: "类别" },
@@ -2228,8 +2187,6 @@
       const currentProduct = window.inventoryProducts.find(
         (product) => String(product.id) === urlParams.get("id")
       );
-
-      populateRandomProducts(currentProduct, window.inventoryProducts);
 
       if (currentProduct.video_url) {
         productVideo.src = currentProduct.video_url;
@@ -2287,4 +2244,45 @@
 
       document.getElementById("packaging").textContent = `${
         savedLanguage === "zh" ? labels.packaging.zh : labels.packaging.en
-      }`;</script></body></html>
+      }`;
+
+      function populateRandomProducts(currentProduct, inventoryProducts) {
+        const sameGroupProducts = inventoryProducts.filter(
+          (product) =>
+            product.group === currentProduct.group &&
+            product.id !== currentProduct.id
+        );
+        const shuffledProducts = sameGroupProducts.sort(
+          () => Math.random() - 0.5
+        );
+        const selectedProducts = shuffledProducts.slice(0, 5);
+        const recommendedImagesContainer = document.querySelector(
+          ".recommended-product-images"
+        );
+        recommendedImagesContainer.innerHTML = "";
+        selectedProducts.forEach((product) => {
+          const productItem = document.createElement("div");
+          productItem.className = "product-item";
+          const productImage = document.createElement("img");
+          productImage.src =
+            product.image_urls && product.image_urls[0]
+              ? product.image_urls[0]
+              : defaultImage;
+          productImage.alt = product.english;
+          productImage.style.cursor = "pointer";
+          const productCaption = document.createElement("div");
+          productCaption.className = "product-caption";
+          productCaption.textContent =
+            savedLanguage === "zh" ? product.chinese : product.english;
+          const productLink = document.createElement("a");
+          productLink.href = `javascript:void(0)`;
+          productLink.addEventListener("click", function () {
+            window.location.href = `/pyrotechnics-kadence/product.html?id=${product.id}#specs`;
+          });
+          productItem.appendChild(productImage);
+          productItem.appendChild(productCaption);
+          productLink.appendChild(productItem);
+          recommendedImagesContainer.appendChild(productLink);
+        });
+      }
+      populateRandomProducts(currentProduct, window.inventoryProducts);</script></body></html>
