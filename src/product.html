@@ -801,7 +801,7 @@
           const productLink = document.createElement("a");
           productLink.href = `javascript:void(0)`;
           productLink.addEventListener("click", function () {
-            window.location.href = `/<%= roots %>/product.html?id=${product.id}#specs`;
+            window.location.href = `<%= roots %>/product.html?id=${product.id}#specs`;
           });
           productItem.appendChild(productImage);
           productItem.appendChild(productCaption);
