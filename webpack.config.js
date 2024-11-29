@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 // Define your 'roots' variable
-const ROOTS_URL = "pyrotechnics-kadence";
+const ROOTS_URL = "";
 
 // Define the pages for HtmlWebpackPlugin
 const pages = [
@@ -70,6 +70,11 @@ module.exports = {
         { from: "data", to: "data" },
         { from: "src/manifest.json", to: "manifest.json" },
         { from: "src/service-worker.js", to: "service-worker.js" },
+        {
+          from: path.resolve(__dirname, "CNAME"),
+          to: path.resolve(__dirname, "dist"),
+          noErrorOnMissing: true,
+        },
       ],
     }),
   ],
