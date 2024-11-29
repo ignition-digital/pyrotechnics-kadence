@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 // Define your 'roots' variable
-const ROOTS_URL = "";
+const ROOTS_URL = "https://www.pyrotechnicsfireworks.com";
 
 // Define the pages for HtmlWebpackPlugin
 const pages = [
