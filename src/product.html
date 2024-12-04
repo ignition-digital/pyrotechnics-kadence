@@ -645,10 +645,15 @@
       function openModal(img) {
         const modal = document.getElementById("myModal");
         const modalImg = document.getElementById("modal-img");
+        const rootUrl =
+          "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE/";
         imageUrls = Array.from(
           document.querySelectorAll("#product-images-container img")
-        ).map((img) => img.getAttribute("data-large"));
-        currentIndex = imageUrls.indexOf(img.getAttribute("data-large"));
+        ).map((img) => rootUrl + img.getAttribute("data-large"));
+
+        currentIndex = imageUrls.indexOf(
+          rootUrl + img.getAttribute("data-large")
+        );
         modalImg.src = imageUrls[currentIndex];
         modal.style.display = "block";
         modalImg.style.opacity = 1;
