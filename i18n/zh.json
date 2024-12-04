@@ -84,7 +84,8 @@
     "address1a": "地址(总部):",
     "address1b": "PT 11395, Jalan BBN 6/2B, Desa Cempaka, Putra Nilai, 71800 Negeri Sembilan",
     "address2a": "地址(砂拉越):",
-    "address2b": "Lot 10560, Block 59, Muara Tuang Land District, 93400 Kota Samarahan"
+    "address2b": "Lot 10560, Block 59, Muara Tuang Land District, 93400 Kota Samarahan",
+    "error": "404：页面未找到"
   },
   "detailsPage": {
     "banner": "产品详情",
