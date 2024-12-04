@@ -12,7 +12,9 @@ function renderProductList(products, containerId) {
 function generateProductHTML(product) {
   const defaultImage =
     "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/product-placeholder2.webp";
-  const imageUrl = product.image_urls?.[0] || defaultImage;
+  const imageUrl = product.image_urls?.[0]
+    ? `https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE/${product.image_urls[0]}`
+    : defaultImage;
   const savedLanguage = localStorage.getItem("selectedLanguage");
   let productName = savedLanguage === "zh" ? product.chinese : product.english;
 
