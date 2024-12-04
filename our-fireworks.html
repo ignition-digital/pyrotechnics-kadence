@@ -1853,4 +1853,16 @@
       excerpt: "",
       featuredImage: false,
     },
-  };</script><script src="wp-content/plugins/elementor/assets/js/frontend.min.js" id="elementor-frontend-js"></script><script src="wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js" id="animate-circle-js"></script><script src="wp-content\plugins\powerpack-elements\assets\js\frontend.min.js" id="powerpack-frontend-js"></script></div></div></body></html>
+  };</script><script src="wp-content/plugins/elementor/assets/js/frontend.min.js" id="elementor-frontend-js"></script><script src="wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js" id="animate-circle-js"></script><script src="wp-content\plugins\powerpack-elements\assets\js\frontend.min.js" id="powerpack-frontend-js"></script></div></div><script>document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search);
+        const categoryId = params.get("category");
+
+        const interval = setInterval(() => {
+          const productElement = document.getElementById(categoryId);
+          if (productElement) {
+            console.log(`Element with ID "${categoryId}" found`);
+            productElement.click();
+            clearInterval(interval);
+          }
+        }, 100);
+      });</script></body></html>
