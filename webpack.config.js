@@ -13,6 +13,7 @@ const pages = [
   { name: "contact-us", template: "./src/contact-us.html" },
   { name: "product", template: "./src/product.html" },
   { name: "our-fireworks", template: "./src/our-fireworks.html" },
+  { name: "404", template: "./src/404.html" },
 ];
 
 const htmlPlugins = pages.map(
