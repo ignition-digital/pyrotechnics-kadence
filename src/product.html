@@ -795,7 +795,7 @@
         recommendedImagesContainer.innerHTML = "";
         selectedProducts.forEach((product) => {
           const productItem = document.createElement("div");
-          productItem.className = "product-item";
+          productItem.className = "product-item product-images";
           const productImage = document.createElement("img");
           productImage.src =
             product.image_urls && product.image_urls[0]
