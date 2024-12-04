@@ -285,5 +285,21 @@
         ></script>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search);
+        const categoryId = params.get("category");
+
+        const interval = setInterval(() => {
+          const productElement = document.getElementById(categoryId);
+          if (productElement) {
+            console.log(`Element with ID "${categoryId}" found`);
+            productElement.click();
+            clearInterval(interval);
+          }
+        }, 100);
+      });
+    </script>
   </body>
 </html>
