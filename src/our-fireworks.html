@@ -291,14 +291,20 @@
         const params = new URLSearchParams(window.location.search);
         const categoryId = params.get("category");
 
-        const interval = setInterval(() => {
-          const productElement = document.getElementById(categoryId);
-          if (productElement) {
-            console.log(`Element with ID "${categoryId}" found`);
-            productElement.click();
-            clearInterval(interval);
-          }
-        }, 100);
+        if (categoryId) {
+          const interval = setInterval(() => {
+            const selectElement = document.querySelector(
+              ".pp-gallery-filters.pp-filters-dropdown"
+            );
+            if (selectElement) {
+              selectElement.value = `.${categoryId}`;
+              const event = new Event("change");
+              selectElement.dispatchEvent(event);
+
+              clearInterval(interval);
+            }
+          }, 100);
+        }
       });
     </script>
   </body>
