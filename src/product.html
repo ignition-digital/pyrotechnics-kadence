@@ -678,7 +678,7 @@
     </script>
     <script>
       const labels = {
-        itemCode: { en: "Item Code", zh: "项目代码" },
+        itemCode: { en: "Item Code", zh: "产品编号" },
         category: { en: "Category", zh: "类别" },
         packaging: { en: "Packaging", zh: "包装" },
       };
@@ -713,7 +713,9 @@
       );
 
       if (currentProduct.video_url) {
-        productVideo.src = currentProduct.video_url;
+        productVideo.src =
+          "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/VIDEO/" +
+          currentProduct.video_url;
         placeholderImage.style.display = "none";
       } else {
         productVideo.style.display = "none";
@@ -733,7 +735,9 @@
         productItem.style.flex = "0 1 auto";
 
         const imgElement = document.createElement("img");
-        imgElement.src = imageUrl;
+        imgElement.src =
+          "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE/" +
+          imageUrl;
         imgElement.id = `product-image-${index + 1}`;
         imgElement.setAttribute("data-large", imageUrl);
         imgElement.width = 120;
@@ -790,7 +794,8 @@
           const productImage = document.createElement("img");
           productImage.src =
             product.image_urls && product.image_urls[0]
-              ? product.image_urls[0]
+              ? "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE/" +
+                product.image_urls[0]
               : defaultImage;
           productImage.alt = product.english;
           productImage.style.cursor = "pointer";

@@ -21,3 +21,5 @@ coverage/
 .cache/
 
 src/components/contact-form.html
+
+temp/
