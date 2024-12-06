@@ -1053,4 +1053,6 @@ window.inventoryProducts = [
     chinese: '1.5" 双炮弹',
     packaging: "6/2/6",
   },
-];
+].sort((a, b) => {
+  return a.english.localeCompare(b.english);
+});
