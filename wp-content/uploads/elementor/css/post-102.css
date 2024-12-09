@@ -17,8 +17,8 @@
 .elementor-102
   .elementor-element.elementor-element-2c32f40
   > .elementor-background-overlay {
-  background-image: url("https://public-110924.s3.ap-southeast-1.amazonaws.com/images/pyrotechnics-001.jpg");
-  background-position: 55px 0px;
+  background-image: url("https://public-110924.s3.ap-southeast-1.amazonaws.com/images/pyrotechnics-004v2.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
@@ -182,7 +182,7 @@
   .elementor-element.elementor-element-2fce8ec1
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 .elementor-102
   .elementor-element.elementor-element-2fce8ec1
@@ -282,7 +282,7 @@
   border-style: solid;
   border-width: 0px 0px 3px 0px;
   border-color: #ffd4d4;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 20px 35px 1px 35px;
   box-shadow: -1.21px 6.894px 15px 0px rgba(0, 0, 0, 0.07);
 }
@@ -338,14 +338,14 @@
   .elementor-element.elementor-element-2e0b7a7c
   .elementskit-info-image-box:hover
   .elementskit-info-box-title {
-  color: #fac602;
+  color: white;
 }
 .elementor-102
   .elementor-element.elementor-element-2e0b7a7c
   .elementskit-info-image-box:hover
   .elementskit-info-box-title
   a {
-  color: #fac602;
+  color: white;
 }
 .elementor-102
   .elementor-element.elementor-element-2e0b7a7c
@@ -390,7 +390,7 @@
 .elementor-102
   .elementor-element.elementor-element-cc27c02
   > .elementor-element-populated {
-  box-shadow: 0px 0px 10px 0px #ffd4d4;
+  /* box-shadow: 0px 0px 10px 0px #ffd4d4; */
   margin: 50px 0px 0px 0px;
   --e-column-margin-right: 0px;
   --e-column-margin-left: 0px;
@@ -457,7 +457,7 @@
   border-style: solid;
   border-width: 0px 0px 3px 0px;
   border-color: #ffd4d4;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 20px 35px 1px 35px;
   box-shadow: -1.21px 6.894px 15px 0px rgba(0, 0, 0, 0.07);
 }
@@ -513,14 +513,14 @@
   .elementor-element.elementor-element-8484083
   .elementskit-info-image-box:hover
   .elementskit-info-box-title {
-  color: #fac602;
+  color: white;
 }
 .elementor-102
   .elementor-element.elementor-element-8484083
   .elementskit-info-image-box:hover
   .elementskit-info-box-title
   a {
-  color: #fac602;
+  color: white;
 }
 .elementor-102
   .elementor-element.elementor-element-8484083
@@ -680,14 +680,14 @@
   .elementor-element.elementor-element-27fc601
   .elementskit-info-image-box:hover
   .elementskit-info-box-title {
-  color: #fac602;
+  color: white;
 }
 .elementor-102
   .elementor-element.elementor-element-27fc601
   .elementskit-info-image-box:hover
   .elementskit-info-box-title
   a {
-  color: #fac602;
+  color: white;
 }
 .elementor-102
   .elementor-element.elementor-element-27fc601
@@ -726,7 +726,7 @@
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
   background-color: transparent;
-  background-image: linear-gradient(180deg, #ffffff 0%, #f7f8fb 100%);
+  /* background-image: linear-gradient(180deg, #ffffff 0%, #f7f8fb 100%); */
 }
 .elementor-102 .elementor-element.elementor-element-1d213d1 {
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
@@ -793,13 +793,13 @@ body.rtl .elementor-102 .elementor-element.elementor-element-30d4da07 {
   line-height: 1em;
   letter-spacing: -1px;
 }
-.elementor-102
+/* .elementor-102
   .elementor-element.elementor-element-39ce6057
   .elementskit-section-title-wraper
   .elementskit-section-title
   > span {
   color: #fac602;
-}
+} */
 .elementor-102
   .elementor-element.elementor-element-39ce6057
   .elementskit-section-title-wraper
