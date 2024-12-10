@@ -15,6 +15,8 @@ function generateProductHTML(product) {
   const imageUrl = product.image_urls?.[0]
     ? `https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE/${product.image_urls[0]}`
     : defaultImage;
+  const cacheBustedImageUrl = `${imageUrl}?v=${Date.now()}`;
+
   const savedLanguage = localStorage.getItem("selectedLanguage");
   let productName = savedLanguage === "zh" ? product.chinese : product.english;
 
@@ -28,7 +30,7 @@ function generateProductHTML(product) {
                 decoding="async"
                 class="pp-gallery-slide-image product-image-border"
                 src="${defaultImage}" 
-                srcset="${imageUrl} 1x, ${imageUrl} 2x" 
+                srcset="${cacheBustedImageUrl} 1x, ${cacheBustedImageUrl} 2x" 
                 alt=""
                 data-no-lazy="1"
                 loading="lazy"
