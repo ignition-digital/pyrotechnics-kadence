@@ -1020,9 +1020,9 @@ window.inventoryProducts = [
     sku: "3603",
     group: "flying-series",
     image_urls: [
-      "3603-OSAMA-175-175.png",
-      "3603-OSAMA-175-175-2.png",
       "3603-OSAMA-175-175-1.png",
+      "3603-OSAMA-175-175-2.png",
+      "3603-OSAMA-175-175.png",
     ],
     video_url: "3603---OSAMA-175-175mp4.mp4",
     english: 'OSAMA 1.75"',
