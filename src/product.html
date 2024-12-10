@@ -740,11 +740,13 @@
         productItem.style.flex = "0 1 auto";
 
         const imgElement = document.createElement("img");
+        const cacheBustedImageUrl = `${imageUrl}?v=${Date.now()}`;
+
         imgElement.src =
           "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE/" +
-          imageUrl;
+          cacheBustedImageUrl;
         imgElement.id = `product-image-${index + 1}`;
-        imgElement.setAttribute("data-large", imageUrl);
+        imgElement.setAttribute("data-large", cacheBustedImageUrl);
         imgElement.width = 120;
         imgElement.height = 120;
         imgElement.style.width = "120px";
