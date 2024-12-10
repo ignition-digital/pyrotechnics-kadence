@@ -684,9 +684,9 @@ window.inventoryProducts = [
     sku: "0303",
     group: "handheld-series",
     image_urls: [
-      "0303-SUNSET-4-COLOUR-.png",
       "0303-SUNSET-4-COLOUR-1.png",
       "0303-SUNSET-4-COLOUR-2.png",
+      "0303-SUNSET-4-COLOUR-.png",
     ],
     video_url: "0303--SUNSET-4-COLOUR-mp4.mp4",
     english: "SUNSET 4 COLOUR",
@@ -1021,8 +1021,8 @@ window.inventoryProducts = [
     group: "flying-series",
     image_urls: [
       "3603-OSAMA-175-175.png",
-      "3603-OSAMA-175-175-1.png",
       "3603-OSAMA-175-175-2.png",
+      "3603-OSAMA-175-175-1.png",
     ],
     video_url: "3603---OSAMA-175-175mp4.mp4",
     english: 'OSAMA 1.75"',
