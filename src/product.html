@@ -740,7 +740,7 @@
         productItem.style.flex = "0 1 auto";
 
         const imgElement = document.createElement("img");
-        const cacheBustedImageUrl = `${imageUrl}?v=${Date.now()}`;
+        const cacheBustedImageUrl = `${imageUrl}?v=1.0`;
 
         imgElement.src =
           "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE/" +
@@ -802,7 +802,7 @@
           productImage.src =
             product.image_urls && product.image_urls[0]
               ? "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE/" +
-                `${product.image_urls[0]}?v=${Date.now()}`
+                `${product.image_urls[0]}?v=1.0`
               : defaultImage;
           productImage.alt = product.english;
           productImage.style.cursor = "pointer";
