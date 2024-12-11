@@ -802,7 +802,7 @@
           productImage.src =
             product.image_urls && product.image_urls[0]
               ? "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE/" +
-                product.image_urls[0]
+                `${product.image_urls[0]}?v=${Date.now()}`
               : defaultImage;
           productImage.alt = product.english;
           productImage.style.cursor = "pointer";
