@@ -2126,7 +2126,7 @@
         const modal = document.getElementById("myModal");
         const modalImg = document.getElementById("modal-img");
         const rootUrl =
-          "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE/";
+          "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE2/";
         imageUrls = Array.from(
           document.querySelectorAll("#product-images-container img")
         ).map((img) => rootUrl + img.getAttribute("data-large"));
@@ -2220,7 +2220,7 @@
         const cacheBustedImageUrl = `${imageUrl}?v=1.0`;
 
         imgElement.src =
-          "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE/" +
+          "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE2/" +
           cacheBustedImageUrl;
         imgElement.id = `product-image-${index + 1}`;
         imgElement.setAttribute("data-large", cacheBustedImageUrl);
@@ -2278,7 +2278,7 @@
           const productImage = document.createElement("img");
           productImage.src =
             product.image_urls && product.image_urls[0]
-              ? "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE/" +
+              ? "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE2/" +
                 `${product.image_urls[0]}?v=1.0`
               : defaultImage;
           productImage.alt = product.english;
