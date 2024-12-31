@@ -1638,15 +1638,23 @@
   }
   gtag("js", new Date());
   gtag("config", "AW-647974172");</script><!-- Delayed Navigation Helper Function --><script>function gtagSendEvent(url) {
+    var navigate = true;
     var callback = function () {
-      if (typeof url === "string") {
-        window.location = url;
-      }
+      navigate = false;
+      window.location.href = url;
     };
-    gtag("event", "ads_conversion_Contact_Us_1", {
+
+    gtag("event", "whatsapp_click", {
       event_callback: callback,
       event_timeout: 2000,
     });
+
+    setTimeout(function () {
+      if (navigate) {
+        window.location.href = url;
+      }
+    }, 2000);
+
     return false;
   }</script><style id="wp-emoji-styles-inline-css">img.wp-smiley,
       img.emoji {
