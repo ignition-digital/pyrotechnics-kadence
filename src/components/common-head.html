@@ -1805,6 +1805,7 @@
   content="https://public-110924.s3.ap-southeast-1.amazonaws.com/images/brand-icon-v2.png"
 />
 
+<!-- Google Analytics Tag -->
 <script
   async
   src="https://www.googletagmanager.com/gtag/js?id=AW-647974172"
@@ -1816,4 +1817,20 @@
   }
   gtag("js", new Date());
   gtag("config", "AW-647974172");
+</script>
+
+<!-- Delayed Navigation Helper Function -->
+<script>
+  function gtagSendEvent(url) {
+    var callback = function () {
+      if (typeof url === "string") {
+        window.location = url;
+      }
+    };
+    gtag("event", "ads_conversion_Contact_Us_1", {
+      event_callback: callback,
+      event_timeout: 2000,
+    });
+    return false;
+  }
 </script>
