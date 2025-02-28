@@ -387,7 +387,7 @@ window.inventoryProducts = [
     sku: "4138",
     group: "fireworks-series",
     image_urls: ["4138---S9-298---FAN-CAKE-S9-298---.png"],
-    video_url: "4100B---4138---SHOT-CAKE-8-4138----8mp4.mp4",
+    video_url: "4138---S9-298---FAN-CAKE-S9-298---mp4.mp4",
     english: 'S9" 298 - FAN CAKE',
     chinese: 'S9" 298 - 网红.魅力巴黎春天',
     packaging: "1/1",
