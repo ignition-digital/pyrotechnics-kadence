@@ -200,7 +200,7 @@
                                 ></iframe>
                                 <img
                                   id="placeholder-image"
-                                  src="https://public-110924.s3.ap-southeast-1.amazonaws.com/images/video-coming-soon.png"
+                                  src="https://product-110924.s3.ap-southeast-1.amazonaws.com/images/video-coming-soon.png"
                                   style="
                                     position: absolute;
                                     top: 0;
@@ -646,7 +646,7 @@
         const modal = document.getElementById("myModal");
         const modalImg = document.getElementById("modal-img");
         const rootUrl =
-          "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE2/";
+          "https://product-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE2/";
         imageUrls = Array.from(
           document.querySelectorAll("#product-images-container img")
         ).map((img) => rootUrl + img.getAttribute("data-large"));
@@ -710,7 +710,7 @@
       const placeholderImage = document.getElementById("placeholder-image");
 
       const defaultImage =
-        "https://public-110924.s3.ap-southeast-1.amazonaws.com/images/product-placeholder2.webp";
+        "https://product-110924.s3.ap-southeast-1.amazonaws.com/images/product-placeholder2.webp";
       const urlParams = new URLSearchParams(window.location.search);
 
       const currentProduct = window.inventoryProducts.find(
@@ -719,7 +719,7 @@
 
       if (currentProduct.video_url) {
         productVideo.src =
-          "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/VIDEO/" +
+          "https://product-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/VIDEO/" +
           currentProduct.video_url;
         placeholderImage.style.display = "none";
       } else {
@@ -743,7 +743,7 @@
         const cacheBustedImageUrl = `${imageUrl}?v=1.0`;
 
         imgElement.src =
-          "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE2/" +
+          "https://product-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE2/" +
           cacheBustedImageUrl;
         imgElement.id = `product-image-${index + 1}`;
         imgElement.setAttribute("data-large", cacheBustedImageUrl);
@@ -801,7 +801,7 @@
           const productImage = document.createElement("img");
           productImage.src =
             product.image_urls && product.image_urls[0]
-              ? "https://public-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE2/" +
+              ? "https://product-110924.s3.ap-southeast-1.amazonaws.com/Pyrotechnics-2025-CNY/PICTURE2/" +
                 `${product.image_urls[0]}?v=1.0`
               : defaultImage;
           productImage.alt = product.english;
