@@ -51,7 +51,10 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
-  mode: "development",
+  mode: "production",
+  performance: {
+    maxAssetSize: 2512000,
+  },
   devServer: {
     static: {
       directory: path.resolve(__dirname, "dist"),
