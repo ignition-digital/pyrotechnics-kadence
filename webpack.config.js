@@ -9,10 +9,7 @@ const ROOTS_URL = "https://www.pyrotechnicsfireworks.com";
 // Define the pages for HtmlWebpackPlugin
 const pages = [
   { name: "index", template: "./src/index.html" },
-  { name: "about-us", template: "./src/about-us.html" },
   { name: "contact-us", template: "./src/contact-us.html" },
-  { name: "product", template: "./src/product.html" },
-  { name: "our-fireworks", template: "./src/our-fireworks.html" },
   { name: "404", template: "./src/404.html" },
 ];
 
